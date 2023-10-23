@@ -1,0 +1,53 @@
+// (10) SASS - Operações Matematicas
+@import 'reset';
+
+nav {
+   background-color: #EEE;
+   height: 100px;
+
+   ul {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+   }
+
+   li {
+      display: inline-block;
+
+      a {
+         display: block;
+         background-color: #CCC;
+         padding: 10px;
+         text-decoration: none;
+         color: #000;
+      }
+   }
+}
+
+%item {
+   background-color: #000;
+   height: 40px;
+   margin-bottom: 5px
+}
+
+$item-width: 250px;
+
+.item {
+   @extend %item;
+   width: $item-width;
+}
+
+.item-duplo {
+   @extend %item;
+   width: $item-width * 2;
+}
+
+.item-metade {
+   @extend %item;
+   width: $item-width / 2;
+}
+
+.item-triplo {
+   @extend %item;
+   width: $item-width * 3;
+}

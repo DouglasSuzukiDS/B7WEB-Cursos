@@ -1,0 +1,7 @@
+text-[#COLOR] => Cor definida
+
+text-blue-700/40 => Controla a opacidade da cor
+
+Em tailwind.config.ts:
+   theme > extend >
+      - color: { Cores customizadas }

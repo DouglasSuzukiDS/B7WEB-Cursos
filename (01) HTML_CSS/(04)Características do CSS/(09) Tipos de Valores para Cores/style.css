@@ -1,0 +1,10 @@
+body {
+   margin: 0;
+   background-color: #202225;
+   color: #00F;
+}
+
+h1 {
+   border: 2px solid currentColor;
+}
+

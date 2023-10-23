@@ -1,0 +1,40 @@
+'use client'
+import { SubmitHandler, useForm } from 'react-hook-form'
+
+type Inputs = {
+  name: string
+  lastName: string
+  age: number
+}
+
+export default function Page() {
+  const { handleSubmit, register } = useForm<Inputs>()
+
+  const handleFormSubmit: SubmitHandler<Inputs> = (data) => {
+    console.log(data)
+  }
+
+  return (
+    <div className="container mx-auto">
+      <form onSubmit={ handleSubmit(handleFormSubmit) }>
+        <input 
+          { ...register('name', { required: true, minLength: 2, maxLength: 20 }) }
+          placeholder='Digite seu nome'
+          className='border border-white text-black p-3' />
+
+        <input 
+          { ...register('lastName', { pattern: /^[a-z]/i }) }
+          placeholder='Digite seu sobrenome'
+          className='block mt-4 border border-white text-black p-3' />
+        
+        <input 
+          type='number'
+          { ...register('age', { required: true, min: 18, max: 120 }) }
+          placeholder='Digite sua idade'
+          className='block mt-4 border border-white text-black p-3' />
+        
+        <input type="submit" value='Enviar' />
+      </form>
+    </div>
+  )
+}

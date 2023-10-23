@@ -1,0 +1,14 @@
+body { 
+   background-color: #202225;
+   /* margin: 0; */
+}
+
+p::first-letter {
+   font-size: 25px;
+   font-weight: bold;
+}
+
+p::first-line {
+   background-color: yellow;
+}
+

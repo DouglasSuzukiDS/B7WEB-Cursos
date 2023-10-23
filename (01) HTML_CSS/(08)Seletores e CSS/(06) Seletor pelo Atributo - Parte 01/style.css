@@ -1,0 +1,16 @@
+body { 
+   background-color: #202225;
+   /* margin: 0; */
+}
+
+input, a {
+   display: block;
+}
+
+/*[required] {
+   background-color: #F00;
+}*/
+
+input[name="usuario"] {
+   background-color: #F00;
+}

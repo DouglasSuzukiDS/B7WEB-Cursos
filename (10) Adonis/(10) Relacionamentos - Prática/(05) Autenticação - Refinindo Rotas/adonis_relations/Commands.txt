@@ -1,0 +1,38 @@
+02
+   - npm init adonis-ts-app@latest adonis-relations
+   - npm i @adonisjs/lucid
+   - node ace configure @adonisjs/lucid
+
+Colocar no arquivo env.ts
+   DB_CONNECTION: Env.schema.string(),
+	MYSQL_HOST: Env.schema.string({ format: 'host' }),
+	MYSQL_PORT: Env.schema.number(),
+	MYSQL_USER: Env.schema.string(),
+	MYSQL_PASSWORD: Env.schema.string.optional(),
+	MYSQL_DB_NAME: Env.schema.string(),
+
+Colocar no arquivo .env
+   DB_CONNECTION=mysql
+
+   MYSQL_HOST=localhost
+   MYSQL_PORT=3306
+   MYSQL_USER=root
+   MYSQL_PASSWORD=OnePiece
+   MYSQL_DB_NAME=adonis_relations
+
+É preciso criar o DB adonis_relations no MySQL
+
+03
+   - yarn add @adonisjs/auth
+   - node ace configure @adonisjs/auth
+
+04 
+   - Modificações feitas nas migrations users e api_token. Caso surgir dúvida olhe os arquivos database/migrations
+   - node ace migrations:run
+
+05
+   - node ace make:controller Auth
+
+
+CREATE DATABASE adonis_relations;
+USE adonis_relations;

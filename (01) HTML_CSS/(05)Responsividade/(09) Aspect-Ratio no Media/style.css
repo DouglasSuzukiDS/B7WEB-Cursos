@@ -1,0 +1,23 @@
+body {
+   background-color: #202225;
+}
+ 
+@media (aspect-ratio: 1/1) { /* Proporção Quadrado perfeito */
+   body {
+      background-color: #F00;
+   }
+}
+
+@media (min-aspect-ratio: 4/2) { /*  */
+   body {
+      background-color: #00F;
+   }
+}
+
+@media (max-aspect-ratio: 1/2) { /*  */
+   body {
+      background-color: #0F0;
+   }
+}
+
+

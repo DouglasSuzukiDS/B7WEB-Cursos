@@ -1,0 +1,70 @@
+[{
+  "_id": {
+    "$oid": "644090cf353e88cab5d1b564"
+  },
+  "images": [
+    {
+      "url": "a83d9931-2c29-4beb-8973-34515275fe79.jpg",
+      "default": true
+    }
+  ],
+  "status": "true",
+  "idUser": "63f6788d639756aa3bc8b5a9",
+  "state": "63f3f2c8b7d38257f05b26e1",
+  "dateCreated": {
+    "$date": "2023-04-20T01:09:35.545Z"
+  },
+  "title": "Ad Test 3",
+  "category": "63acf326c06efd25105ff3cd",
+  "price": 100.35,
+  "priceNegotiable": true,
+  "description": "Alguma coisa na descrição",
+  "views": 2,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "644090f3353e88cab5d1b56b"
+  },
+  "images": [
+    {
+      "url": "7e970d78-394a-474a-965c-2e3a73589d2b.jpg",
+      "default": true
+    }
+  ],
+  "status": "true",
+  "idUser": "63f407cdc427d829b153ad6f",
+  "state": "63f3f2c8b7d38257f05b26e1",
+  "dateCreated": {
+    "$date": "2023-04-20T01:10:11.125Z"
+  },
+  "title": "Ad Test 2",
+  "category": "63acf37ac06efd25105ff3cf",
+  "price": 100.35,
+  "priceNegotiable": false,
+  "description": "Alguma coisa na descrição",
+  "views": 4,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6440912a0190272b28a14f5a"
+  },
+  "images": [
+    {
+      "url": "17b35265-db42-4771-a1e5-84e7d68b7dc9.jpg",
+      "default": true
+    }
+  ],
+  "status": "true",
+  "idUser": "63f409d8d8a6805e5286f4f4",
+  "state": "63f3f2c8b7d38257f05b26e1",
+  "dateCreated": {
+    "$date": "2023-04-20T01:11:06.777Z"
+  },
+  "title": "Ad Test",
+  "category": "63acf344c06efd25105ff3ce",
+  "price": 100.35,
+  "priceNegotiable": true,
+  "description": "Alguma coisa na descrição",
+  "views": 2,
+  "__v": 0
+}]

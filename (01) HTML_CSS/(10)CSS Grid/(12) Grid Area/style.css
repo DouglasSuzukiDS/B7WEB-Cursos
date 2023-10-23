@@ -1,0 +1,38 @@
+body {
+ background-color: #202025;
+}
+
+.container {
+   background-color: #CCC;
+   display: grid;
+   grid-template-columns: repeat(3, 1fr);
+   grid-gap: 10px;
+}
+
+.item {
+   background-color: #00F;
+   border-radius: 10px;
+   padding: 20px;
+   color: #FFF;
+   font-size: 20px;
+}
+
+.item1 {
+   /* 
+      1) grid-row-start 
+      2) grid-column-start 
+      3) grid-row-end 
+      4) grid-column-end 
+   */
+   /* grid-area: 1 / 1 / span 2 / span 2; */
+
+   /* grid-area: 1 / 1 / 4 / 3; // Forma Resumida */
+   grid-row: 1 / 4;
+   grid-column: 1 / 3;
+}
+
+.item6 {
+   /* grid-area: 4 / 2 / 6 / 4; // Forma Resumida */
+   grid-row: 4 / 6;
+   grid-column: 2 / 4;
+}

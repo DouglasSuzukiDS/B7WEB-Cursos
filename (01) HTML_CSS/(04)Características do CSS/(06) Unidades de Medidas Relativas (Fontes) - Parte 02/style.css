@@ -1,0 +1,35 @@
+body {
+   background-color: #202225;
+   font-family: 'Courier';
+}
+
+.box {
+   /*width: 50%;
+   height: 400px;*/
+
+   /* width: 30ex; */
+   width: 300px;
+   background-color: #999;
+}
+
+.box-interno {
+   /*width: 50%;
+   height: 50%;*/
+
+   background-color: #333;
+   color: #FFF;
+   width: 15ch;
+}
+
+/* // Unidades de Medidas Relativas
+   em = Baseada na font-size do elemento pai
+      font-size 20, 10em (20 * 10) seria por volta de 200px
+
+   rem = Baseado no primeiro elemento da estrutura
+
+   % = Baseado no tamanho do elemento pai
+
+   ex = Baseada no tipo de letra que esta usando, no caso se baseando no tamanho da letra x da fonte usada
+
+   ch = Baseada em fontes mono espace (letras do mesmo tamanho)
+*/

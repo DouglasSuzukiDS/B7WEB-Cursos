@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+
+   <link rel="stylesheet" href="/assets/css/bootstrap.min.css">
+   <title>(07) Grid - JustifyContent e AlighItems</title>
+
+   <style>
+      .row [class^=col-], .row .col {
+         background-color: #DDD;
+         border: 1px solid #CCC;
+         height: 50px;
+      }
+
+      .row {
+         background-color: #F99;
+         padding: 10px;
+         height: 500px;
+      }
+   </style>
+</head>
+<body>
+   <div class="container">
+      <!-- 
+         * justify-content-start => Alinha horizontalmente na esquerda
+         * justify-content-center => Alinha no centro horizontalmente
+         * justify-content-end => Alinha horizontalmente na direita
+         * justify-content-around => Alinha horizontalmente, com o mesmo espaço entre os elementos
+         * justify-content-between => Alinha horizontalmente, organizando o 1 elemento na esqueda, o ultimo na direita, e o restante pelo meio dando um espaço entre eles. 
+
+         * align-items-start => Alinhaverticalmente encima
+         * align-items-center => Alinha no centro verticalmente
+         * align-items-end => Alinha verticalmente no final
+      -->
+      <div class="row align-items-center justify-content-center">
+
+         <div class="col-3">Primeira</div>
+         <div class="col-3">Segunda</div>
+         <div class="col-3">Terceira</div>
+      </div>
+   </div>
+
+   <script src="assets/js/jquery-3.6.2.min.js.js"></script>
+   <script src="assets/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

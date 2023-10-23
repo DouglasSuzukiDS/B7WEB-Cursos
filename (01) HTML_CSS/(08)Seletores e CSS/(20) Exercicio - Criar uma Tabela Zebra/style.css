@@ -1,0 +1,26 @@
+body { 
+   background-color: #202225;
+   /* margin: 0; */
+}
+
+table {
+   border: 3px solid #000;
+   background-color: #888;
+   text-align: center;
+}
+
+td, th {
+   padding: 10px;
+}
+
+th {
+   background-color: #333;
+}
+
+tr:nth-child(odd) {
+   background-color: #BBB;
+}
+
+
+
+

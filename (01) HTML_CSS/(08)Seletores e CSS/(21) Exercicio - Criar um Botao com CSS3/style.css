@@ -1,0 +1,25 @@
+body { 
+   background-color: #202225;
+}
+
+.button {
+   background: linear-gradient(to right, #55a1d8, #2587cd);
+   color: #FFF;
+   text-decoration: none;
+   font-weight: bold;
+   
+   border-radius: 10px;
+   width: 150px;
+   height: 60px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.button:hover {
+   background: linear-gradient(to right, #43acf7, #2ea1fa);
+   box-shadow: 2px 2px 2px 0px rgba(46,161,250,0.52);
+}
+
+
+

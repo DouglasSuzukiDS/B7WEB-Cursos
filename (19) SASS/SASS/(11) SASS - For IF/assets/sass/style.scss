@@ -1,0 +1,47 @@
+// (11) SASS - For + If
+@import 'reset';
+
+nav {
+   background-color: #EEE;
+   height: 100px;
+
+   ul {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+   }
+
+   li {
+      display: inline-block;
+
+      a {
+         display: block;
+         background-color: #CCC;
+         padding: 10px;
+         text-decoration: none;
+         color: #000;
+      }
+   }
+}
+
+%item-padrao {
+   font-size: 14px;
+   border: 1px solid #333;
+   padding: 5px;
+}
+
+%item-negrito {
+   font-weight: bold;
+}
+
+@for $i from 1 through 10 { // $i seria a variavel, 1 - 10 a iteração
+
+   .item-#{$i} { //#{$i} => Seria o mesmo que use ${}
+      @extend %item-padrao;
+
+      @if $i <= 3 {
+         @extend %item-negrito;
+      } 
+   }
+
+}

@@ -1,0 +1,41 @@
+body {
+   background-color: #202225;
+   margin: 0;
+}
+
+.box {
+   font-size: 20px;
+   color: blue;
+}
+
+h1 {
+   font-size: 30px;
+   color: red;
+}
+
+.box h1 {
+   font-size: inherit;
+   color: inherit;
+}
+/* // Unidades de Medidas Relativas
+   em = Baseada na font-size do elemento pai
+      font-size 20, 10em (20 * 10) seria por volta de 200px
+
+   rem = Baseado no primeiro elemento da estrutura
+
+   % = Baseado no tamanho do elemento pai
+
+   ex = Baseada no tipo de letra que esta usando, no caso se baseando no tamanho da letra x da fonte usada
+
+   ch = Baseada em fontes mono espace (letras do mesmo tamanho)
+
+   vh = Baseado na altura total da tela
+
+   vw = Baseada na larguta total da tela
+
+   vmin = Verifica entre a altura e largura quem tem o menor valor para usar
+
+   vmax = Verifica entre a altura e largura quem tem o maior valor para usar
+
+   inherit = Força a herança do intem acima
+*/

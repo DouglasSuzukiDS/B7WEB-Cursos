@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Aula 19 - Input type Hidden</title>
+   <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <form method="GET" action="blablabla.php">
+
+      <input type="hidden" name="country" value="JP"/>
+
+      <!-- Fieldset: Seria um conjunto de campos -->
+
+      <fieldset>
+         <legend>Dados Pessoais</legend> 
+         <label>
+            Primeiro Nome: <br>
+            <input type="text" name="name" />
+         </label> <br>
+         
+         <label>
+            Sobrenome: <br>
+            <input type="text" name="lastname" />
+         </label> <br>
+
+      </fieldset>
+
+      <fieldset>
+         <legend>Dados Profissionais</legend>
+         <label>
+            Nome da empresa: <br>
+            <input type="text" name="companyname">
+         </label> <br>
+         <label>
+            Cargo na empresa: <br>
+            <input type="text" name="companyjobtitle">
+         </label> <br>
+      </fieldset>
+
+      <input type="submit" value="Cadastrar">
+
+   </form>
+</body>
+</html>

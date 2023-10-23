@@ -1,0 +1,53 @@
+.container{
+   display: flex;
+   flex-direction: row;
+   background-color: #DDD;
+   margin: 10px;
+}
+
+.container2{
+   display: flex;
+   flex-direction: column;
+   background-color: #DDD;
+   margin: 10px;
+}
+
+/* .container div, .container2 div{
+   flex: 1;
+   background-color: #F00;
+   margin: 10px;
+   padding: 10px;
+   font-size: 18px;
+} */
+
+.div1{
+   flex: 1; /* Faz a distrubuição do tamanho dos elementos, quanto maior o núero do flex, maior ele sera comparado aos de número menor. */
+   background-color: #F00;
+   margin: 10px;
+   padding: 10px;
+   font-size: 18px;
+}
+
+.div2{
+   flex: 2;
+   background-color: #F00;
+   margin: 10px;
+   padding: 10px;
+   font-size: 18px;
+}
+
+.div3{
+   flex: 1;
+   background-color: #F00;
+   margin: 10px;
+   padding: 10px;
+   font-size: 18px;
+}
+
+.div4{
+   flex: 3;
+   background-color: #F00;
+   margin: 10px;
+   padding: 10px;
+   font-size: 18px;
+}

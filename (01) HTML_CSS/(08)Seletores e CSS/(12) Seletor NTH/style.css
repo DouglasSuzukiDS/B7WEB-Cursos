@@ -1,0 +1,13 @@
+body { 
+   background-color: #202225;
+   /* margin: 0; */
+}
+
+/*div:nth-child(2) { // De cima pra baixo 
+   background-color: #F00;
+}*/
+
+/* div:nth-last-child(2) // Caso nao funcione esse, usar o de baixo */
+div:nth-last-of-type(2) { /* De baixo pra cima */
+   background-color: #F00;
+}

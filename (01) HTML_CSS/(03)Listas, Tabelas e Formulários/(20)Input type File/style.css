@@ -1,0 +1,12 @@
+/* Aula 20 - Input type File */
+fieldset {
+   background-color: #EEE;
+   margin-bottom: 20px;
+   border: 2px solid #F00;
+}
+
+legend {
+   background-color: #f00;
+   color: #FFF;
+   padding: 5PX;
+}

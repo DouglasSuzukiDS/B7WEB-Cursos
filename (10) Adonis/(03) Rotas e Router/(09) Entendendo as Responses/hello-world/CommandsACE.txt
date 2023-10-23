@@ -1,0 +1,13 @@
+ACE é um framework para terminal para se usar o Adonis
+
+Os comandos devem ser digitados node ace COMANDO
+
+   - repl => Possibilita saber os dados dos arquivos
+   - server => Sobe a aplicação num servidor HTTP
+
+Comandos Utilizados na Aula
+   Mod 02 - Aula 06
+      - node ace make:controller Home => Cria dentro da pasta APP a pasta controller, que contem a pasta http com o arquivo HomeController.ts
+
+   Mod 03 - Aula 01
+     - node ace make:controller Painel 

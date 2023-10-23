@@ -1,0 +1,25 @@
+// (05) SASS - Variáveis
+
+$cor-fundo: #EEE;
+$cor-fonte: #333;
+$borda-padrao: 2px;
+$fundo-padrao: #CCC;
+
+body {
+   background-color: $cor-fundo;
+   color: $cor-fonte;
+}
+
+.quadrado {
+   width: 200px;
+   height: 200px;
+   border: $borda-padrao solid #000;
+   background-color: $fundo-padrao;
+}
+
+.retangulo {
+   width: 300px;
+   height: 200px;
+   border: $borda-padrao solid #000;
+   background-color: $fundo-padrao;
+}

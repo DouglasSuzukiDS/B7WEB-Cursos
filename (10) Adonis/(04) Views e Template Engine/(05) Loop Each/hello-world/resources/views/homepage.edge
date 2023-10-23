@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <title>Meu primeiro Site com AdoniJS</title>
+</head>
+<body>
+   <h1>Hello World</h1>
+
+   {{--  Quando se tem um OBJ  --}}
+   <h2>Usuários: </h2>
+
+   <ul>
+      {{--  Forma 01  
+      <li>{{ usuarios[0].nome }}</li>
+      <li>{{ usuarios[1].nome }}</li> --}}
+
+      {{--  Forma 02  --}}
+      {{--  @each(usuario in usuarios) 
+         <li>{{ usuario.nome }} - {{ usuario.tecnologias }}</li>
+      @end  --}}
+
+      {{--  Forma 03  --}}
+      @each((usuario, index) in usuarios) 
+         <li> {{ index + 1 }} . {{ usuario.nome }} - {{ usuario.tecnologias }}</li>
+      @end
+
+   </ul>
+   
+
+</body>
+</html>

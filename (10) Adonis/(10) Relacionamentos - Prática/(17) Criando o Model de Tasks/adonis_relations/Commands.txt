@@ -1,0 +1,69 @@
+02
+   - npm init adonis-ts-app@latest adonis-relations
+   - npm i @adonisjs/lucid
+   - node ace configure @adonisjs/lucid
+
+Colocar no arquivo env.ts
+   DB_CONNECTION: Env.schema.string(),
+	MYSQL_HOST: Env.schema.string({ format: 'host' }),
+	MYSQL_PORT: Env.schema.number(),
+	MYSQL_USER: Env.schema.string(),
+	MYSQL_PASSWORD: Env.schema.string.optional(),
+	MYSQL_DB_NAME: Env.schema.string(),
+cloridrato de severlamer
+Colocar no arquivo .env
+   DB_CONNECTION=mysql
+
+   MYSQL_HOST=localhost
+   MYSQL_PORT=3306
+   MYSQL_USER=root
+   MYSQL_PASSWORD=OnePiece
+   MYSQL_DB_NAME=adonis_relations
+
+É preciso criar o DB adonis_relations no MySQL
+
+03
+   - yarn add @adonisjs/auth
+   - node ace configure @adonisjs/auth
+
+04 
+   - Modificações feitas nas migrations users e api_token. Caso surgir dúvida olhe os arquivos database/migrations
+   - node ace migration:run
+
+05
+   - node ace make:controller Auth
+
+06
+   - node ace make:seeder CreateFirstUser
+   - node ace migration:fresh
+   - node ace db:seed 
+   
+09
+   - node ace make:migration tasks
+   - node ace migration:run
+
+10
+   - node ace make:migration categories
+   - node ace migration:run
+   CASO DER ERRO NA HORA DE RODAR AS MIGRATIONS BASTA EXCLUI AS TABELA DO MYSQL
+
+13 
+   - node ace make:controller CategorieController --resource
+   - node ace make:controller TaskController --resource
+   - node ace list:routes
+
+14
+   - node ace make:model Categorie
+
+15 
+   Caso der algum problema, FAÇA O LOGIN E PEGUE UM NOVO TOKEN E PASSE AS REQUISIÇÕES
+   - node ace migratio:fresh => Ira resetar o DB
+   - node ace db:seed => Criara o usuário
+
+17
+   - node ace make:model Task
+
+CREATE DATABASE adonis_relations;
+USE adonis_relations;
+ALTER TABLE categories AUTO_INCREMENT = 1;
+DELETE from users where id = 1;

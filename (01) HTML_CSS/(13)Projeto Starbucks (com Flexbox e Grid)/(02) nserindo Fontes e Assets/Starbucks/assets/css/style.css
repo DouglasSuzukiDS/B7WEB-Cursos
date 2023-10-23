@@ -1,0 +1,15 @@
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+body {
+   background-color: #202225;
+   font-family: 'Open Sans', sans-serif;
+}
+
+header .line {
+   background-color: #117050;
+   height: 10px;
+}

@@ -1,0 +1,21 @@
+[{
+  "_id": {
+    "$oid": "63f407cdc427d829b153ad6f"
+  },
+  "name": "kaido@op.com",
+  "email": "kaido@op.com",
+  "state": "63f3f2c8b7d38257f05b26e1",
+  "passwordHash": "$2b$10$3TMNfa3P1N/nTb3Qw0XcK.a9m9/sYp6sMun1ANdWezk3ENP/tyACC",
+  "token": "$2b$10$x1cUykuz2HSqxWXNOHtTiuAruvR06gRh2L2FhMU.PugG7SOPn8Oj6",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63f409d8d8a6805e5286f4f4"
+  },
+  "name": "Shank",
+  "email": "shanks@op.com",
+  "state": "63f3f2c8b7d38257f05b26e1",
+  "passwordHash": "$2b$10$.bAKoKqahiCJe8pKxjuaCuyGZ4z9RaMXxNkBfuGBkXbXzcI1CcvMi",
+  "token": "$2b$10$VU7m11HNKl1yCba.I79kp.FU4fs9BF68IsXJdVeYQLl/rsMUdtBla",
+  "__v": 0
+}]

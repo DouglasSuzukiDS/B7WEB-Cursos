@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <title>Meu primeiro Site com AdoniJS</title>
+</head>
+<body>
+   <h1>Hello World</h1>
+
+   {{--  Quando se tem um OBJ  --}}
+   <h2>Usuários: </h2>
+
+   <ul>
+      {{--  Forma 01  
+      <li>{{ usuarios[0].nome }}</li>
+      <li>{{ usuarios[1].nome }}</li> --}}
+
+      {{--  Forma 02  --}}
+      {{--  @each(usuario in usuarios) 
+         <li>{{ usuario.nome }} - {{ usuario.tecnologias }}</li>
+      @end  --}}
+
+      {{--  Forma 03  --}}
+      @each((usuario, index) in usuarios) 
+         <li> {{ index + 1 }} . {{ usuario.nome }} - {{ usuario.tecnologias }}</li>
+      @end
+   </ul>
+
+   {{-- <h2>Administradores</h2>
+   <ul>
+      @each(user in usuarios)
+         @if(user.admin == true) 
+            <li>{{ user.nome }}</li>
+         @end
+      @end
+   </ul>
+
+   <h2>Usuários</h2>
+   <ul>
+      @each(user in usuarios)
+         @if(!user.admin) 
+            <li>{{ user.nome }}</li>
+         @end
+      @end
+   </ul>--}}
+
+   <h2>Usuários: </h2>
+   <ul>
+      @each(usuario in usuarios)
+
+         {{--  @if(usuario.admin)
+            <li>{{ usuario.nome }} - Admnistrador</li>
+         @else 
+            <li>{{ usuario.nome }} - Usuário</li>
+         @end  --}}
+
+         <li>{{ usuario.nome }} - {{ usuario.admin ? 'Admnistrador' : 'Usuário' }} </li>
+      @end
+   </ul>
+   
+   
+
+</body>
+</html>

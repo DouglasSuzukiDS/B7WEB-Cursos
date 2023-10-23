@@ -1,0 +1,8 @@
+body { 
+   background-color: #202225;
+   /* margin: 0; */
+}
+
+body :not(p) { /* Aplica em todos os elementos, menoso informado */
+   background-color: #F00;
+}

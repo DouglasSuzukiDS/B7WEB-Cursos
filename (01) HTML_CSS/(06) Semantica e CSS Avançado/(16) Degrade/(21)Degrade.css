@@ -1,0 +1,19 @@
+body{
+   margin: 0;
+}
+
+.exemplo{
+   width: 500px;
+   height: 200px;
+   background-color: blue;
+   /* ackground: linear-gradient(white, blue); */
+      /*Normalmente é (Direção, Cor1, Cor2) */
+
+      /* Prevenção em outros navegadores */
+   /*background: -moz-linear-gradient(white, blue);
+   background: -o-linear-gradient(white, blue);
+   background: -webkit-linear-gradient(white, blue);*/
+
+   background: linear-gradient(-75deg, white, blue);
+   
+}  

@@ -1,0 +1,21 @@
+body { 
+   background-color: #202225;
+   /* margin: 0; */
+}
+
+div {
+   background-color: #F00;
+   width: 200px;
+   height: 200px;
+   /*position: fixed;
+   right: 0;
+   bottom: 0;*/
+   margin: auto;
+   transform: skew(20deg, 20deg);
+      /*
+         scale(x, y), scaleX(), scaleY() = Escala 
+         rotate = Rotação
+         skew = DIstorce o elemento
+      */
+}
+

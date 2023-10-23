@@ -1,0 +1,28 @@
+.container{
+   display: flex;
+   height: 500px;
+   flex-direction: row;
+   flex-wrap: wrap;
+   justify-content: center;
+   align-items: flex-start;
+   align-content: flex-end; /* Alinahmento de todo o conteudo */
+   background-color: #DDD;
+}
+
+.div10{
+   /* align-self: start; */
+   /* order: -1; */
+}
+
+.div14{
+   /* order: 2; */
+}
+
+.container div{
+   width: 100px;
+   height: 100px;
+   background-color: #F00;
+   margin: 10px;
+   padding: 10px;
+   font-size: 18px;
+}

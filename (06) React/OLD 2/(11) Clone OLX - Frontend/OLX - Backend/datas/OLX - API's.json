@@ -1,0 +1,460 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "OLX",
+    "dateExported": "2023-04-20T01:17:08.656Z",
+    "version": "1.1",
+    "folders": [
+        {
+            "_id": "1f4a7d75-ed3b-4c64-8b73-6469e8317f07",
+            "name": "State",
+            "containerId": "",
+            "created": "2023-02-20T22:58:30.250Z",
+            "sortNum": 10000
+        },
+        {
+            "_id": "d64234b2-08dc-4d91-86d0-116199ceb58a",
+            "name": "User",
+            "containerId": "",
+            "created": "2023-02-20T22:58:30.263Z",
+            "sortNum": 20000
+        },
+        {
+            "_id": "255e292f-fda9-4ff9-9e21-762d2587cfc4",
+            "name": "Category",
+            "containerId": "",
+            "created": "2023-02-20T22:58:30.264Z",
+            "sortNum": 30000
+        },
+        {
+            "_id": "7d7b59dd-45f8-48ff-ac32-9649d40797e1",
+            "name": "Ads",
+            "containerId": "",
+            "created": "2023-02-20T22:58:30.265Z",
+            "sortNum": 40000
+        }
+    ],
+    "requests": [
+        {
+            "_id": "caaa72ee-f089-4a97-b75a-ad30a0494de0",
+            "colId": "1b581efb-da28-4c09-9f67-b0c0cf2f93fc",
+            "containerId": "",
+            "name": "Ping",
+            "url": "http://localhost:5000/ping",
+            "method": "GET",
+            "sortNum": 10000,
+            "created": "2023-02-20T22:58:30.262Z",
+            "modified": "2023-02-20T22:58:30.262Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "9eadda9e-c5da-4881-ad8b-fd67040b7a6c",
+            "colId": "1b581efb-da28-4c09-9f67-b0c0cf2f93fc",
+            "containerId": "1f4a7d75-ed3b-4c64-8b73-6469e8317f07",
+            "name": "State",
+            "url": "localhost:5000/states",
+            "method": "GET",
+            "sortNum": 10000,
+            "created": "2023-02-20T22:58:30.263Z",
+            "modified": "2023-02-20T22:58:30.263Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "token",
+                    "value": "",
+                    "isDisabled": true,
+                    "isPath": false
+                }
+            ],
+            "tests": []
+        },
+        {
+            "_id": "1784870e-fe01-4a97-a45a-c22d4d662b69",
+            "colId": "1b581efb-da28-4c09-9f67-b0c0cf2f93fc",
+            "containerId": "d64234b2-08dc-4d91-86d0-116199ceb58a",
+            "name": "Signin",
+            "url": "localhost:5000/user/signin?email=shanks@op.com&password=1234",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2023-02-20T22:58:30.264Z",
+            "modified": "2023-04-20T01:10:17.792Z",
+            "headers": [
+                {
+                    "name": "Accept",
+                    "value": "*/*",
+                    "isDisabled": true
+                },
+                {
+                    "name": "User-Agent",
+                    "value": "Thunder Client (https://www.thunderclient.com)",
+                    "isDisabled": true
+                }
+            ],
+            "params": [
+                {
+                    "name": "email",
+                    "value": "shanks@op.com",
+                    "isPath": false
+                },
+                {
+                    "name": "email",
+                    "value": "kaido@op.com",
+                    "isDisabled": true,
+                    "isPath": false
+                },
+                {
+                    "name": "email",
+                    "value": "law@op.com",
+                    "isDisabled": true,
+                    "isPath": false
+                },
+                {
+                    "name": "password",
+                    "value": "1234",
+                    "isPath": false
+                }
+            ],
+            "tests": []
+        },
+        {
+            "_id": "c2c4bffb-a52b-4a6a-bb2b-f0ec2e6d508c",
+            "colId": "1b581efb-da28-4c09-9f67-b0c0cf2f93fc",
+            "containerId": "d64234b2-08dc-4d91-86d0-116199ceb58a",
+            "name": "Signup",
+            "url": "localhost:5000/user/signup?name=Shank&email=shanks@op.com&password=1234&state=63f3f2c8b7d38257f05b26e1",
+            "method": "POST",
+            "sortNum": 20000,
+            "created": "2023-02-20T22:58:30.265Z",
+            "modified": "2023-02-20T22:58:30.265Z",
+            "headers": [
+                {
+                    "name": "Accept",
+                    "value": "*/*",
+                    "isDisabled": true
+                },
+                {
+                    "name": "User-Agent",
+                    "value": "Thunder Client (https://www.thunderclient.com)",
+                    "isDisabled": true
+                }
+            ],
+            "params": [
+                {
+                    "name": "name",
+                    "value": "Shank",
+                    "isPath": false
+                },
+                {
+                    "name": "email",
+                    "value": "shanks@op.com",
+                    "isPath": false
+                },
+                {
+                    "name": "password",
+                    "value": "1234",
+                    "isPath": false
+                },
+                {
+                    "name": "state",
+                    "value": "63f3f2c8b7d38257f05b26e1",
+                    "isPath": false
+                },
+                {
+                    "name": "token",
+                    "value": "$2b$10$bfZ5vXOfC.jRPt1G6Dkrf.72WekEL3AcSvl2OccnwJIfUqmTuDkSG",
+                    "isDisabled": true,
+                    "isPath": false
+                }
+            ],
+            "tests": []
+        },
+        {
+            "_id": "fecb6ccd-c173-47f8-83d6-5ff87acd5056",
+            "colId": "1b581efb-da28-4c09-9f67-b0c0cf2f93fc",
+            "containerId": "d64234b2-08dc-4d91-86d0-116199ceb58a",
+            "name": "User Controller Info",
+            "url": "localhost:5000/user/me?token=$2b$10$M4JCDDJ5cQ7hfRIyPUZ4te4W3igof5hPsPafs1hPYF44fNah6Z4tC",
+            "method": "GET",
+            "sortNum": 20000,
+            "created": "2023-02-20T22:58:30.266Z",
+            "modified": "2023-04-20T00:49:01.804Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "token",
+                    "value": "$2b$10$M4JCDDJ5cQ7hfRIyPUZ4te4W3igof5hPsPafs1hPYF44fNah6Z4tC",
+                    "isPath": false
+                }
+            ],
+            "tests": []
+        },
+        {
+            "_id": "32823b7b-27ad-434e-a9c4-0a6deda4b2c4",
+            "colId": "1b581efb-da28-4c09-9f67-b0c0cf2f93fc",
+            "containerId": "d64234b2-08dc-4d91-86d0-116199ceb58a",
+            "name": "User Controller Edit Action",
+            "url": "localhost:5000/user/me?token=$2b$10$0OUPftKCwdUbIy9mp2RmoezpP68lF3ToVm39mR5qSX.tgiISh8dq2&state=63f3f2c8b7d38257f05b26e1",
+            "method": "PUT",
+            "sortNum": 30000,
+            "created": "2023-02-20T22:58:30.268Z",
+            "modified": "2023-04-20T00:26:13.459Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "token",
+                    "value": "$2b$10$0OUPftKCwdUbIy9mp2RmoezpP68lF3ToVm39mR5qSX.tgiISh8dq2",
+                    "isPath": false
+                },
+                {
+                    "name": "name",
+                    "value": "Kaido",
+                    "isDisabled": true,
+                    "isPath": false
+                },
+                {
+                    "name": "email",
+                    "value": "kaido@op.com",
+                    "isDisabled": true,
+                    "isPath": false
+                },
+                {
+                    "name": "state",
+                    "value": "63f3f2c8b7d38257f05b26e1",
+                    "isPath": false
+                }
+            ],
+            "tests": []
+        },
+        {
+            "_id": "0aef60ac-3031-404e-9d3f-c0a94cc46382",
+            "colId": "1b581efb-da28-4c09-9f67-b0c0cf2f93fc",
+            "containerId": "255e292f-fda9-4ff9-9e21-762d2587cfc4",
+            "name": "Categories",
+            "url": "localhost:5000/categories",
+            "method": "GET",
+            "sortNum": 40000,
+            "created": "2023-02-20T22:58:30.269Z",
+            "modified": "2023-02-20T22:58:30.269Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "06dfd638-b877-404b-9391-031b5fc9c568",
+            "colId": "1b581efb-da28-4c09-9f67-b0c0cf2f93fc",
+            "containerId": "7d7b59dd-45f8-48ff-ac32-9649d40797e1",
+            "name": "New Ad",
+            "url": "localhost:5000/ad/add",
+            "method": "POST",
+            "sortNum": 50000,
+            "created": "2023-02-20T22:58:30.270Z",
+            "modified": "2023-04-20T01:11:05.761Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "token",
+                    "value": "$2b$10$pifEP3i2HmtKJUlW/qhDdOWqzPfkTpbBKS2LCRt9N59MS1Y.8bava",
+                    "isDisabled": true,
+                    "isPath": false
+                },
+                {
+                    "name": "title",
+                    "value": "Testando",
+                    "isDisabled": true,
+                    "isPath": false
+                },
+                {
+                    "name": "price",
+                    "value": "R$ 100,35",
+                    "isDisabled": true,
+                    "isPath": false
+                },
+                {
+                    "name": "priceneg",
+                    "value": "true",
+                    "isDisabled": true,
+                    "isPath": false
+                },
+                {
+                    "name": "desc",
+                    "value": "Alguma coisa",
+                    "isDisabled": true,
+                    "isPath": false
+                },
+                {
+                    "name": "cat",
+                    "value": "baby",
+                    "isDisabled": true,
+                    "isPath": false
+                }
+            ],
+            "body": {
+                "type": "formdata",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "token",
+                        "value": "$2b$10$1ZZ1RtaqO2O38tJqqA5id.exIjJvVEuZEBBDKKxSL0T7Pad3wHbKq"
+                    },
+                    {
+                        "name": "title",
+                        "value": "Ad Test"
+                    },
+                    {
+                        "name": "price",
+                        "value": "R$ 100,35"
+                    },
+                    {
+                        "name": "priceneg",
+                        "value": "true"
+                    },
+                    {
+                        "name": "desc",
+                        "value": "Alguma coisa na descrição"
+                    },
+                    {
+                        "name": "cat",
+                        "value": "63acf344c06efd25105ff3ce"
+                    },
+                    {
+                        "name": "cat",
+                        "value": "63acf397c06efd25105ff3d0 - Sports",
+                        "isDisabled": true
+                    },
+                    {
+                        "name": "cat",
+                        "value": "63acf37ac06efd25105ff3cf",
+                        "isDisabled": true
+                    },
+                    {
+                        "name": "cat",
+                        "value": "63acf326c06efd25105ff3cd - Carro",
+                        "isDisabled": true
+                    }
+                ],
+                "files": [
+                    {
+                        "name": "img",
+                        "value": "c:\\Users\\Krzysztof\\Downloads\\OLX - Backend\\public\\media\\Harry.png"
+                    },
+                    {
+                        "name": "img",
+                        "value": "c:\\Users\\Krzysztof\\Downloads\\OLX - Backend\\public\\media\\Texugo.png",
+                        "isDisabled": true
+                    },
+                    {
+                        "name": "img",
+                        "value": "c:\\Users\\Krzysztof\\Downloads\\OLX - Backend\\public\\media\\Pica Pau.png",
+                        "isDisabled": true
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "e55d961d-8412-4b79-b909-56673ee9685f",
+            "colId": "1b581efb-da28-4c09-9f67-b0c0cf2f93fc",
+            "containerId": "7d7b59dd-45f8-48ff-ac32-9649d40797e1",
+            "name": "All Ads",
+            "url": "localhost:5000/ad/list",
+            "method": "GET",
+            "sortNum": 60000,
+            "created": "2023-02-20T22:58:30.271Z",
+            "modified": "2023-04-20T00:32:47.411Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "q",
+                    "value": "Test",
+                    "isDisabled": true,
+                    "isPath": false
+                },
+                {
+                    "name": "state",
+                    "value": "SP",
+                    "isDisabled": true,
+                    "isPath": false
+                },
+                {
+                    "name": "offset",
+                    "value": "0",
+                    "isDisabled": true,
+                    "isPath": false
+                }
+            ],
+            "tests": []
+        },
+        {
+            "_id": "376553b0-8f87-40cf-9fec-6d43b862de45",
+            "colId": "1b581efb-da28-4c09-9f67-b0c0cf2f93fc",
+            "containerId": "7d7b59dd-45f8-48ff-ac32-9649d40797e1",
+            "name": "Ad Item",
+            "url": "localhost:5000/ad/item?id=63ae0050a16c25d42ea93c08&other=true",
+            "method": "GET",
+            "sortNum": 70000,
+            "created": "2023-02-20T22:58:30.272Z",
+            "modified": "2023-02-20T22:58:30.272Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "id",
+                    "value": "63ae0050a16c25d42ea93c08",
+                    "isPath": false
+                },
+                {
+                    "name": "other",
+                    "value": "true",
+                    "isPath": false
+                }
+            ],
+            "tests": []
+        },
+        {
+            "_id": "c8a851f4-2b67-4e26-bcbe-6e4cb75bd27b",
+            "colId": "1b581efb-da28-4c09-9f67-b0c0cf2f93fc",
+            "containerId": "7d7b59dd-45f8-48ff-ac32-9649d40797e1",
+            "name": "Edit Ad",
+            "url": "localhost:5000/ad/63ae0050a16c25d42ea93c08",
+            "method": "POST",
+            "sortNum": 90000,
+            "created": "2023-02-20T22:58:30.273Z",
+            "modified": "2023-02-20T22:58:30.273Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "formdata",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "token",
+                        "value": "$2b$10$pifEP3i2HmtKJUlW/qhDdOWqzPfkTpbBKS2LCRt9N59MS1Y.8bava"
+                    },
+                    {
+                        "name": "title",
+                        "value": "Titulo Alterado"
+                    },
+                    {
+                        "name": "status",
+                        "value": "true"
+                    },
+                    {
+                        "name": "price",
+                        "value": "R$ 200"
+                    },
+                    {
+                        "name": "cat",
+                        "value": "cars"
+                    }
+                ],
+                "files": [
+                    {
+                        "name": "img",
+                        "value": "e:\\SVG's.png"
+                    }
+                ]
+            },
+            "tests": []
+        }
+    ]
+}

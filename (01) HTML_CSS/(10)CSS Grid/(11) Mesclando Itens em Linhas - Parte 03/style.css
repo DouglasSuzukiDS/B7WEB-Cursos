@@ -1,0 +1,28 @@
+body {
+ background-color: #202025;
+}
+
+.container {
+   background-color: #CCC;
+   display: grid;
+   grid-template-columns: repeat(3, 1fr);
+   grid-gap: 10px;
+}
+
+.item {
+   background-color: #00F;
+   border-radius: 10px;
+   padding: 20px;
+   color: #FFF;
+   font-size: 20px;
+}
+
+.item1 {
+   /* grid-column: 1 / 4; Start / End */
+   grid-column: 1 / span 2; /* Span seria como um 'ATE'  */
+   grid-row: 1 / 4;
+}
+
+.item11 {
+   grid-column: 1 / span 3;
+}

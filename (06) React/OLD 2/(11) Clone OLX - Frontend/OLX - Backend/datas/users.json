@@ -1,0 +1,31 @@
+[{
+  "_id": {
+    "$oid": "63f407cdc427d829b153ad6f"
+  },
+  "name": "Kaido",
+  "email": "kaido@op.com",
+  "state": "63f3f2c8b7d38257f05b26e1",
+  "passwordHash": "$2b$10$3TMNfa3P1N/nTb3Qw0XcK.a9m9/sYp6sMun1ANdWezk3ENP/tyACC",
+  "token": "$2b$10$8kYRv43L0CqG1MXfuVPTnOfxCdvi1GwVZTtR825RTFfgnetXvuyse",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63f409d8d8a6805e5286f4f4"
+  },
+  "name": "Shank",
+  "email": "shanks@op.com",
+  "state": "63f3f2c8b7d38257f05b26e1",
+  "passwordHash": "$2b$10$.bAKoKqahiCJe8pKxjuaCuyGZ4z9RaMXxNkBfuGBkXbXzcI1CcvMi",
+  "token": "$2b$10$1ZZ1RtaqO2O38tJqqA5id.exIjJvVEuZEBBDKKxSL0T7Pad3wHbKq",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63f6788d639756aa3bc8b5a9"
+  },
+  "name": "Law",
+  "email": "law@op.com",
+  "state": "63f3f2c8b7d38257f05b26e1",
+  "passwordHash": "$2b$10$hVybo0YQ0k9aQvOCxC2axu3Fcy.fZCZPFEczlTi0D68FKx1aLxR8.",
+  "token": "$2b$10$qzSGd50Q05PjclmgvOS3s.qlpCCuxMFa9abkdH9530Zvnsao2WzAK",
+  "__v": 0
+}]

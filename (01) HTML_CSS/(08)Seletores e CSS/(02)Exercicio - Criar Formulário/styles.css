@@ -1,0 +1,83 @@
+body{
+   margin: 0;
+   padding: 0;
+}
+
+.container{
+   /* border: 1px solid #F00; */
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height: 100vh;
+}
+
+form{
+   border: 2px solid #0001;
+   border-radius: 20px;
+   box-shadow: 5px 5px #3333;
+}
+
+.item{
+   display: flex;
+   flex-direction: column;
+   padding: 15px;
+}
+
+.item input, .item textarea{
+   width: 270px;
+   height: 20px;
+   border-radius: 10px;
+   border: 1px solid #333;
+   box-shadow: 3px 3px #3333;
+   outline: none;
+   padding: 10px;
+   font-size: 15px;
+}
+
+.item label{
+   font-size: 15px;
+   font-weight: bold;
+   padding-bottom: 5px;
+}
+
+::-webkit-input-placeholder{
+   padding: 15px;
+}
+
+.item textarea{
+   resize: none;
+   height: 100px;
+}
+
+.button{
+   flex-direction: row;
+   justify-content: space-around;
+}
+
+.btn{
+   width: 100px;
+   border-radius: 15px;
+   border: none;
+   font-size: 15px;
+   font-weight: bold;
+   color: #FFF;
+   padding: 10px;
+   outline: none;
+}
+
+.reset{
+   background-color: #F00;
+}
+
+.reset:hover{
+   background-color: rgb(201, 25, 25);
+
+}
+
+.submit{
+   background-color: rgba(8, 212, 18, 0.856);
+}
+
+.submit:hover{
+   background-color: rgba(7, 173, 15, 0.856);
+}

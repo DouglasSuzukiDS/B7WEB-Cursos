@@ -1,0 +1,50 @@
+text-[#COLOR] => Cor definida
+
+text-blue-700/40 => Controla a opacidade da cor
+
+Em tailwind.config.ts:
+   theme > extend >
+      - color: { Cores customizadas }
+
+w-Num => Tamanho do elemento
+w-Num/Num => Tamanho em porcentagem
+w-full => 100% de tamanho
+w-screen => Tamanho e VW
+max-w-sm|md|lg|xl => Tamanho máximo
+min-w-sm|md|lg|xl => Tamanho mínimo
+
+p-Num => Padding em base 4
+
+m-Num => Margin em base 4
+mt-Num => Margin top
+my-Num => Margin Top e Margin Bottom
+mx-Num => Margin Left e Margin Right
+-ml-Num => Margin Left negativo
+m-[Numpx] => Margin com valor expecifico
+
+text-sm|md|lg|xl => Tamanho para texto
+text-base => Texto do tamanho padrao
+text-left|center|right => Seria o text-align
+text-[color] => Texto com a cor estabelecida
+
+font-bold => Fonte em negrito
+italic => Texto em italico
+truncate => Coloca ... quando otexto não couber no container
+-line-clamp-Num => Numero de linhas que gostaria que fosse exibido, quando ultrapassar, colcoa os 3 pontinhos
+
+rounded[-sm|md|lg] => Border-radius
+
+border[-Num] => Tamanho da borda
+border-[COLOR] => Cor da borda 
+border-[l|t|r|b]-[COLOR] => Borda em uma posição com cor
+border-dotted => Borda com bolinhas
+
+outline => Funciona igual a bordar 
+
+// 04) Layout e Responsividade
+NONE = width: 100%
+SM (small) = max-width: 640px
+MD (medium) = max-width: 768px
+LG (larfe) = max-width: 1024px
+XL (extra-large) = max-width: 1280px
+2XL (extra-extra-large) = max-width: 1536px

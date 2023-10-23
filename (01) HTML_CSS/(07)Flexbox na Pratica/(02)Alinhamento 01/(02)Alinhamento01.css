@@ -1,0 +1,18 @@
+.container{
+   display: flex;
+   height: 500px;
+   /* flex-flow: row wrap; /* Junção de flex-direction e flex-wrap */
+   flex-direction: row;
+   justify-content: center; /* Alinhamento horizontal /row  */
+   align-items: center; /* Alinhamento vertical / column */
+   background-color: #DDD;
+}
+
+.container div{
+   width: 100px;
+   height: 100px;
+   background-color: #F00;
+   margin: 10px;
+   padding: 10px;
+   font-size: 18px;
+}

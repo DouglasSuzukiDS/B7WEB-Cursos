@@ -1,0 +1,53 @@
+// (09) SASS - Expandindo Propriedades
+@import 'reset';
+
+
+nav {
+   background-color: #EEE;
+   height: 100px;
+
+   ul {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+   }
+
+   li {
+      display: inline-block;
+
+      a {
+         display: block;
+         background-color: #CCC;
+         padding: 10px;
+         text-decoration: none;
+         color: #000;
+      }
+   }
+}
+
+%fundamento-msg { // Seria como uma classe
+   padding: 10px;
+   font-size: 24px;
+   border: 2px solid #CCC;
+   margin: auto;
+   max-width: 500px;
+   margin-top: 10px
+}
+
+.msg-info {
+   @extend %fundamento-msg; // Seria como a instância um de OBJ com a classe informada
+   border-color: #00F;
+   color: #00F;  
+}
+
+.msg-aviso {
+   @extend %fundamento-msg; // Seria como a instância um de OBJ com a classe informada
+   border-color: #F00;
+   color: #F00;
+}
+
+.msg-sucesso {
+   @extend %fundamento-msg; // Seria como a instância um de OBJ com a classe informada
+   border-color: #0F0;
+   color: #0F0;
+}

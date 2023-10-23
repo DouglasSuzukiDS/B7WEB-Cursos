@@ -1,0 +1,33 @@
+// (08) SASS - Mixin
+@import 'reset';
+
+@mixin girar($graus) { // É como se fosse uma função
+   transform: rotate($graus);
+   -webkit-transform: rotate($graus);
+   -moz-transform: rotate($graus);
+   -ms-transform: rotate($graus);
+}
+
+nav {
+   background-color: #EEE;
+   height: 100px;
+
+   ul {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+   }
+
+   li {
+      display: inline-block;
+      @include girar(30deg); // Seria a chamada de uma função
+
+      a {
+         display: block;
+         background-color: #CCC;
+         padding: 10px;
+         text-decoration: none;
+         color: #000;
+      }
+   }
+}

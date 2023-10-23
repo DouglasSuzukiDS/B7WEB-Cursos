@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <title>Meu primeiro Site com AdoniJS</title>
+</head>
+<body>
+   <h1>Hello World</h1>
+   
+   <code>
+      Para imprimir uma variável que vem do controller, você vai usar o código assim: @{{ variavel }}
+      <br />
+         {{--  Para imprimir chaves no Adonis, basta colocar na frente um @  --}}
+      
+      {{--  {{{ script }}}   --}} {{--  // Redenriza uma parte do script   --}}
+
+      {{ variavel }}
+      <br />
+      {{--  Podem renderizar qualquer expressão javascript  --}}
+      {{ 2 + 1 + 3 }}
+      <br />
+
+      {{--  Podem Renderizar Funções Assincronas e Sincronas  --}}
+      {{ await getUser() }}
+   </code>
+</body>
+</html>

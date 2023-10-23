@@ -1,0 +1,17 @@
+body { 
+   background-color: #202225;
+   /* margin: 0; */
+}
+
+figure {
+   padding: 5px;
+   margin: 0;
+   border: 1px solid #CCC;
+}
+
+figcaption {
+   background-color: #000;
+   color: #FFF;
+   text-align: center;
+   padding: 2px;
+}

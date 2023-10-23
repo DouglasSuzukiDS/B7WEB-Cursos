@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="style.css">
+   <title>(04) Imagens Responsivas: Picture e Source</title>
+
+</head>
+<body>
+
+   <picture>
+      <!-- A partir de 650px -->
+      <source media="(min-width: 650px)" srcset="img2.jpg">
+
+      <!-- A partir de 450px -->
+      <source media="(min-width: 450px)" srcset="img3.jpg">
+
+      <img src="img1.jpg" alt="Imagem 01">
+   </picture>
+  
+</body>
+</html>

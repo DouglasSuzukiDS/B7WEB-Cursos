@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+
+   <link rel="stylesheet" href="/assets/css/bootstrap.min.css">
+   <title>(06) Grid - Ordenando Colunas</title>
+
+   <style>
+      .row [class^=col-], .row .col {
+         background-color: #DDD;
+         border: 1px solid #CCC;
+      }
+   </style>
+</head>
+<body>
+   <div class="container">
+      <div class="row">
+         <!-- 
+            - order-first => Se torno o primeiro elemento;
+            - order-last => Se torna o último elemento;
+            - order-NUM => Ordena o elemento, se os outros elementos não tiverem a classe, o proprio sistema ordena onde os DESORDENADOS vem PRIMEIROS, e os ORDENADOS vem por ÚLTIMO;
+            - 
+         -->
+
+         <div class="col order-last">Primeira</div>
+         <div class="col order-first">Segunda</div>
+         <div class="col order-2">Terceira</div>
+         <div class="col order-1">Quarta</div>
+         <div class="col order-3">Quinta</div>
+
+      </div>
+   </div>
+
+   <script src="assets/js/jquery-3.6.2.min.js.js"></script>
+   <script src="assets/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+body { 
+   background-color: #202225;
+   /* margin: 0; */
+}
+
+input, a {
+   display: block;
+}
+
+a[href^="https:"] { /* Pesquisa com esse começo */
+   background-color: #00F;
+}
+
+a[href^="http:"] { /* Pesquisa com esse começo */
+   background-color: #0F0F0F;
+}
+
+a[href*="economia"] { /* Procura em todos href os que tem o valor informado */
+   background-color: #F00;
+}
+
+a[href*="futebol"] {
+   background-color: #0F0;
+}
+
+a[href$="html"] { /* Pesquisa no final */
+   background-color: #123456;
+}
+
+

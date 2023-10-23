@@ -1,0 +1,16 @@
+body {
+   background-color: #202225;
+}
+
+img {
+   width: 400px;
+   height: 400px;
+   object-fit: scale-down;
+   /*
+      - fill: Padrao, Mostra a imagem na area disponivel;
+      - contain: Dimunui a imagem sem distorcer ocupando o espaço disponivel, e o espaço restante seria como o padding/margem
+      - cover: Corta a imagem para ela caber no espaço disponivel, mantendo a proporção
+      - none: Mantem a imagem de tamanho original mas corta o resto que não cabe no container
+      - scale-down: Diminiu a qualidade da imagem para caber no container
+   */
+}

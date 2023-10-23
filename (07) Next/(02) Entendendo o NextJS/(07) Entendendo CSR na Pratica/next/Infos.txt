@@ -1,0 +1,3 @@
+CSR = Client-side Rendering
+SSR = Server-side Rendering
+SSG = Static-side Genetation

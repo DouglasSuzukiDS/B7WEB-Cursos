@@ -1,0 +1,23 @@
+body {
+  background-color: #202225;
+}
+
+nav {
+  background-color: #EEE;
+  height: 100px;
+}
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+nav li {
+  display: inline-block;
+}
+nav li a {
+  display: block;
+  background-color: #CCC;
+  padding: 10px;
+  text-decoration: none;
+  color: #000;
+}/*# sourceMappingURL=style.css.map */

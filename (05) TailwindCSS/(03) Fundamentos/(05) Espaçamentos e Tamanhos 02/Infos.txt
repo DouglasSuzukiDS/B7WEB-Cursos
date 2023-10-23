@@ -1,0 +1,23 @@
+text-[#COLOR] => Cor definida
+
+text-blue-700/40 => Controla a opacidade da cor
+
+Em tailwind.config.ts:
+   theme > extend >
+      - color: { Cores customizadas }
+
+w-Num => Tamanho do elemento
+w-Num/Num => Tamanho em porcentagem
+w-full => 100% de tamanho
+w-screen => Tamanho e VW
+max-w-sm|md|lg|xl => Tamanho máximo
+min-w-sm|md|lg|xl => Tamanho mínimo
+
+p-Num => Padding em base 4
+
+m-Num => Margin em base 4
+mt-Num => Margin top
+my-Num => Margin Top e Margin Bottom
+mx-Num => Margin Left e Margin Right
+-ml-Num => Margin Left negativo
+m-[Numpx] => Margin com valor expecifico

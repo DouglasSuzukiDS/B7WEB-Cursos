@@ -1,0 +1,23 @@
+body {
+   background-color: #202225;
+}
+
+#exemplo {
+   width: 200px;
+   height: 200px;
+   margin: 20px;
+   border: 1px solid #CCC;
+}
+
+.verde {
+   background-color: #0F0;
+}
+
+.vermelho {
+   background-color: #F00;
+
+}
+
+.azul {
+   background-color: #00F;
+}

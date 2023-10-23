@@ -1,0 +1,31 @@
+npm i @adonisjs/lucid 
+node ace invoke @adonisjs/lucid
+   - É necessário acrescentar os seguintes comandos no arquivo ENV.TS:
+      DB_CONNECTION: Env.schema.string(),
+      MYSQL_HOST: Env.schema.string({ format: 'host' }),
+      MYSQL_PORT: Env.schema.number(),
+      MYSQL_USER: Env.schema.string(),
+      MYSQL_PASSWORD: Env.schema.string.optional(),
+      MYSQL_DB_NAME: Env.schema.string(),
+   
+   - É necessário apenas criar um DB noMySQL chamado hello_db
+  
+
+Comando usados na aula 
+   - Mod 05
+      05
+         - node ace make:migration posts
+      06
+         - node ace migration:run
+         - node ace migration:status
+         - node ace make:migration users
+
+      08
+         => Caso ter erro de conexão com o usuário do MySQL, rodar os comando o MySQL no Adonis
+         - ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'root';
+         - FLUSH PRIVILEGES;
+
+let posts = { 
+   title: 'Meu primeiro post',
+   content: 'O conteudo do meu primeiro post,
+}

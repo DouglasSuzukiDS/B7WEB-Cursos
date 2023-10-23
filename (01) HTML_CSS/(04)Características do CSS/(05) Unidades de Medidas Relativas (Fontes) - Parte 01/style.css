@@ -1,0 +1,35 @@
+html {
+   font-size: 10px; /* Valor Padrao e 16 */
+}
+
+body {
+   background-color: #202225;
+
+   font-size: 20px;
+}
+
+h1 {
+   /* font-size: 3em; */
+   font-size: 3rem;
+}
+
+.box {
+   /* font-size: 2em; */
+   font-size: 2rem;
+}
+
+.box-interno {
+   /* width: 10em;  
+   height: 10em; */
+
+   width: 20rem;
+   height: 20rem;
+   background-color: #999;
+}
+
+/* // Unidades de Medidas Relativas
+   em = Baseada na font-size do elemento pai
+      font-size 20, 10em (20 * 10) seria por volta de 200px
+   rem = Baseado no primeiro elemento da estrutura
+
+*/

@@ -1,0 +1,29 @@
+body { background-color: #C1C7E0; }
+
+.botao {
+   background-color: #F00;
+   color: #FFF;
+   border: 0 px;
+   padding: 20px;
+}
+
+.galeria, .flip, .flash {
+   width: 100px;
+   height: 100px;
+   background-color: #000;
+   background-repeat: no-repeat;
+   background-position: center;
+   background-size: cover;
+}
+
+.galeria {
+   background-image: url('../images/camera1.png');
+}
+
+.flip {
+   background-image: url('../images/camera2.png');
+}
+
+.flash {
+   background-image: url('../images/camera3.png');
+}

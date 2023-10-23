@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Aula 20 - Input type File</title>
+   <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <form method="POST" action="blablabla.php" enctype="multipart/form-data">
+
+      <input type="hidden" name="country" value="JP"/>
+
+      <!-- Fieldset: Seria um conjunto de campos -->
+
+      <fieldset>
+         <legend>Dados Pessoais</legend> 
+         <label>
+            Primeiro Nome: <br>
+            <input type="text" name="name" />
+         </label> <br>
+         
+         <label>
+            Sobrenome: <br>
+            <input type="text" name="lastname" />
+         </label> <br>
+
+         <label>
+            Foto: <br>
+            <input type="file" name="photo" accept="application/pdf" />
+            <!-- 
+               accept
+                  image/*: Aceita todos os tipos d e imagens;
+                  application/pdf: Aceita apenas PDF;
+
+
+             -->
+         </label> <br>
+
+      </fieldset>
+
+      <fieldset>
+         <legend>Dados Profissionais</legend>
+         <label>
+            Nome da empresa: <br>
+            <input type="text" name="companyname">
+         </label> <br>
+         <label>
+            Cargo na empresa: <br>
+            <input type="text" name="companyjobtitle">
+         </label> <br>
+      </fieldset>
+
+      <input type="submit" value="Cadastrar">
+
+   </form>
+</body>
+</html>

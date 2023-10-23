@@ -1,0 +1,8 @@
+body { 
+   background-color: #202225;
+}
+
+img {
+   /* width: max(50%, 300px);  Pega o maior valor */
+   width: min(50%, 300px);  /* Pega o menor valor */
+}

@@ -1,0 +1,27 @@
+:root {
+   --bg-color: #FFF;
+   --bg-second: #CCC;
+   --font-color: #F00;
+   --font-size: 25px;
+}
+
+body {
+   background-color: var(--bg-color);
+   font-size: var(--font-size);
+}
+
+h1 {
+   color: var(--font-color, #00F); /* Quando não houver a cor definida, usar o segundo valor */
+}
+
+.container {
+   background-color: var(--bg-second);
+   color: var(--font-color);
+}
+
+@media (max-width: 450px) {
+   :root {
+      --font-size: 15px;
+   }
+}
+

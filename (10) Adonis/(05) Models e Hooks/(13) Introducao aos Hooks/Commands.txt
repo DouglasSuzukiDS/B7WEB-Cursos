@@ -1,0 +1,37 @@
+Criar projeto Adonis
+- npm init adonis-ts-app@latest NAME
+
+05
+- npm i @adonisjs/lucid
+- node ace configure @adonisjs/lucid
+
+Colocar no arquivo env.ts
+   DB_CONNECTION: Env.schema.string(),
+   MYSQL_HOST: Env.schema.string({ format: 'host' }),
+   MYSQL_PORT: Env.schema.number(),
+   MYSQL_USER: Env.schema.string(),
+   MYSQL_PASSWORD: Env.schema.string.optional(),
+   MYSQL_DB_NAME: Env.schema.string(),
+
+cloridrato de severlamer
+Colocar no arquivo .env
+   DB_CONNECTION=mysql
+
+   MYSQL_HOST=localhost
+   MYSQL_PORT=3306
+   MYSQL_USER=root
+   MYSQL_PASSWORD=OnePiece
+   MYSQL_DB_NAME=adonis_models
+
+É preciso criar o DB adonis_models no MySQL
+
+06
+- node ace make:model User
+
+08
+   - node ace make migration users 
+   - Ir no aquivo criado e colocar as linhas para criar a tabela users:
+      table.string('name')
+      table.string('password')
+      table.integer('age')
+   - node ace make:run

@@ -1,0 +1,9 @@
+npx prisma init
+
+- Configurar o acesso do Banco no arquivo .env
+
+// Comandos
+- npx prisma init => Inicia um arquivo do prisma
+
+- npx prisma generate => Roda as modificações do prisma
+

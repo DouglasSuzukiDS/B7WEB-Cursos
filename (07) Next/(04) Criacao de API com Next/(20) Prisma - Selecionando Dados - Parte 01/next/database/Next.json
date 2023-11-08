@@ -1,0 +1,42 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "Next",
+    "dateExported": "2023-11-07T00:20:47.347Z",
+    "version": "1.1",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "af1d88f6-1781-48bc-807b-a8ec62706cbe",
+            "colId": "8faa33f4-ca14-4c97-8c7a-2add515942c5",
+            "containerId": "",
+            "name": "Users",
+            "url": "localhost:3000/api/users",
+            "method": "GET",
+            "sortNum": 10000,
+            "created": "2023-11-06T23:51:42.366Z",
+            "modified": "2023-11-06T23:52:51.754Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "bffb0fae-10ec-4f90-8fbd-4f51c376958f",
+            "colId": "8faa33f4-ca14-4c97-8c7a-2add515942c5",
+            "containerId": "",
+            "name": "New User",
+            "url": "localhost:3000/api/users",
+            "method": "POST",
+            "sortNum": 20000,
+            "created": "2023-11-06T23:53:36.072Z",
+            "modified": "2023-11-06T23:58:05.868Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"name\": \"Gol D. Roger\",\n  \"email\": \"goldroger@email.com\"\n}",
+                "form": []
+            },
+            "tests": []
+        }
+    ]
+}

@@ -1,0 +1,6 @@
+// Arquivos para variaveis de ambiente
+
+.env.local
+.env.development
+.env.production
+.env

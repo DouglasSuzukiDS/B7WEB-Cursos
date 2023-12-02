@@ -1,0 +1,17 @@
+Aula 14
+npx prisma init
+
+- Configurar o acesso do Banco no arquivo .env
+
+// Comandos
+- npx prisma init => Inicia um arquivo do prisma
+
+- npx prisma generate => Roda as modificações do prisma
+
+----------------------
+
+Aula 15
+- npx prisma db push => Gera a tabela
+
+Aula 18
+- npx prisma generate

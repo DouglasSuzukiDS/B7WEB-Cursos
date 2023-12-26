@@ -1,0 +1,62 @@
+Planejando do zero um SASS Multi-tenancy para pequena empresas.
+
+Software as a Service = Software como um Serviço
+Multi-tenancu = Varios inquilinos
+
+Single-Tenant => Sistema unico
+Multi-Tenant => Sistema compartilhado
+   - Domínio
+   - Sub-domínio
+   - Login
+
+
+Single-Tenant:
+   - Vantagem: Personalizar abertamente o sistema.
+   - Desvantagem: Alto custo de manutenção so sistema original.
+
+Multi-Tenant:
+   - Vantagem: Baixo custo de manutenção do sistema.
+   - Desvantagem: Acoplamento de recursos.
+
+Sistema de Delivery
+   => Pessoas que vão utilizar esse sistema:
+      - Usuário final.
+      - O estabelecimento.
+      - Admin do sistema.
+   
+   => Funcionalidades
+      - Carrinho de comprar (com checkout)
+      - Listagem de produtos
+      - Login / Cadastro
+      - Visualização de Pedidos
+   
+   => Gestão de Pedidos
+
+   => Gestão de Produtos
+
+   => Gestão de Estabelecimentos
+
+Telas: 
+   - Home (Listagem de promoções e produtos)
+   - Página do Produto específico
+   - Carrinho de compras
+   - Login / Cadastro
+   - Checkout (para logado)
+   - Cadastro de endereços
+   - Lista de Pedidos
+   - Pedido individual
+   
+   - Login / Cadastro para estabelicimento
+   - Listagem e Pedidos
+   - Edição de Pedidos
+   - Listagem de produtos
+   - Edição de produtos
+
+   - Listagem de estabelicimento
+   - Edição de estabelecimentos
+
+Definir as Tecnologias:
+   - Next (com SSR) e Prisma (ORM)
+   - MySQL / PostgreSQL
+   - API RESTful
+   - Typescript

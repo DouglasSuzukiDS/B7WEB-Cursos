@@ -1,0 +1,32 @@
+Projeto Amigo Secreto / Oculto
+
+Eventos
+Grupos
+Pessoas
+
+Evento A (não agrupado)
+   - Grupo Geral 
+      - Pessoa A
+      - Pessoa B
+      - Pessoa C
+
+Evento B (agrupado)
+   - Grupo 1
+      - Pessoa 1
+      - Pessoa 2
+   
+   - Grupo 2
+      - Pessoa 3
+      - Pessoa 4
+   
+   - Grupo 3
+      - Pessoa 5
+      - Pessoa 6
+
+Subdivisões:
+   - API (Backend)
+   - Frontend (Site)
+   - Frontend Admin
+
+- Quando é realizado o sorteio ? 
+   - No momento em que se ATIVA o evento.

@@ -1,0 +1,16 @@
+.container {
+   display: flex;
+   align-items: center;
+   font-weight: 400;
+   font-size: 16px;
+   color: #6A7D8B;
+}
+
+.container span {
+   margin-left: 24px;
+   padding: 24px 0;
+}
+
+.disabled {
+   text-decoration: line-through;
+}

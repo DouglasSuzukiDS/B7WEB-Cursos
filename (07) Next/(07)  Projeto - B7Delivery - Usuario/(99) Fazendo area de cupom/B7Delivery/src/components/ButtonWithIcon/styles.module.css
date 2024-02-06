@@ -1,0 +1,31 @@
+.container {
+   display: flex;
+   align-items: center;
+   padding: 6px;
+   border-radius: 4px;
+}
+
+.leftSide {
+   width: 48px;
+   height: 48px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   border-radius: 5px;
+}
+
+.centerSide {
+   flex: 1;
+   padding: 0 16px;
+   font-weight: 400;
+   font-size: 15px;
+
+   /* Ocultar texto que ultrapassa o tamanho disponível */
+   white-space: nowrap; /* Não ir para linha de baixo */
+   overflow: hidden; /* O que passar fica oculto */
+   text-overflow: ellipsis; /* o que não couber na linha coloca os ... */
+}
+
+.rightSide {
+   padding: 0 12px;
+}

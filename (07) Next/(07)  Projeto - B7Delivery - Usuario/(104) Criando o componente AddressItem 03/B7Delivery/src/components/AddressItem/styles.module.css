@@ -1,0 +1,47 @@
+.container {
+   display: flex;
+   align-items: center;
+   border-bottom: 1.5px solid rgba(27, 27, 27, .1);
+}
+
+.addressArea {
+   flex: 1;
+   display: flex;
+   align-items: center;
+   padding: 32px 0;
+}
+
+.addressIcon {
+   margin-left: 19px;
+}
+
+.addressText {
+   width: 200px;
+   font-weight: 400;
+   font-size: 15px;
+   color: #1B1B1B;
+   margin-left: 11px;
+
+   /* Ocultar texto que ultrapassa o tamanho disponível */
+   white-space: nowrap; /* Não ir para linha de baixo */
+   overflow: hidden; /* O que passar fica oculto */
+   text-overflow: ellipsis; /* o que não couber na linha coloca os ... */
+}
+
+.btnArea {
+
+}
+
+.menuIcon {
+   padding-left: 0 10px;
+}
+
+.popUp {
+   position: absolute;
+   right: 24px;
+   background-color: #FFF;
+   border: 2px solid #F9F9FB;
+   box-shadow: 0px 16px 40px rgba(0, 0, 0, .08);
+   border-radius: 4px;
+   padding: 19px;
+}

@@ -8,10 +8,10 @@ Atraves desse repositório compartilho os arquivos das Aulas/Cursos(Módulos) qu
 ## Sobre o curso
 O curso [**Fullstack B7WEB**](https://lp.b7web.com.br/fullstack) é um curso que possui várias linguagens/bibliotecas/frameworks. Entre essas tecnologias estão **HTML5/CSS, Javascript 🥰,Typescript 🥰, TailwindCSS 🥰, React 🥰, Next 🥰, Node 🥰, Adonis, PHP, Laravel, Bootstrap, SASS, Firebase, Docker** e claro **Git/Github** e Mobile com **React Native 🥰**. Também possui cursos complementares de **Angular 9 e Vue2** (versões bem antigas*) e pacotes dos antigos cursos da B7WEB **'do Zero ao Profissional'** que são eles **WordPress-ZP, Frontend-ZP, PHP-ZP e ReactNative-ZP**.
 
-Vale lembrar que após completar de assistir cada curso, a plataforma disponibiliza um certificado. Também possui acesso ao forum onde se pode interegir e consultar em posts de dúvidas de outros alunos e claro, pedir ajuda ao forum e/ou suporte via email onde ao menos algum membro do suporte irá te responder e sanar suas dúvidas. *(Me ajudaram até no TCC 🤝)*.
+Vale lembrar que após completar de assistir cada curso, a plataforma disponibiliza um certificado. Também possui acesso ao forum onde se pode interegir e consultar em posts de dúvidas de outros alunos, e claro, pedir ajuda ao forum e/ou suporte via email onde ao menos algum membro do suporte irá te responder e sanar suas dúvidas. *(Me ajudaram até no TCC 🤝)*.
 
 ## Lembrete
-Todo conteudo aqui presente nesse repositório tem **carater educativo/estudos**. Os cógidos são os que foram codados nas aulas.
+Todo conteudo aqui presente nesse repositório tem **carater educativo/estudos**. Os códigos são os que foram codados nas aulas.
 
 ## Curso / Redes Sociais
 - [**Curso Fullstack B7WEB**](https://lp.b7web.com.br/fullstack)

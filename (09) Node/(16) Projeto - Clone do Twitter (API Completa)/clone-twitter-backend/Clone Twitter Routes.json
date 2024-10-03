@@ -1,0 +1,718 @@
+{
+	"info": {
+		"_postman_id": "040f2c47-54a2-45b9-ade7-051f7250c02f",
+		"name": "Clone Twitter",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "37130063"
+	},
+	"item": [
+		{
+			"name": "Test Routes",
+			"item": [
+				{
+					"name": "Ping",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseURL}}/ping",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"ping"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Private Ping",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzbHVnIjoibmljayIsImlhdCI6MTcyNzg4NTY2Nn0.CHQ8JX_v8tDMafW51FAZgYUaPoPqzCZBEVwXOqp4ljM",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseURL}}/privateping",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"privateping"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Auth Routes",
+			"item": [
+				{
+					"name": "Signup",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Tonhaozinho\",\r\n    \"email\": \"tonhaozinho@email.com\",\r\n    \"password\": \"1234\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseURL}}/auth/signup",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"auth",
+								"signup"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Signin",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\": \"nick@email.com\",\r\n    \"password\": \"1234\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseURL}}/auth/signin",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"auth",
+								"signin"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Tweet Routes",
+			"item": [
+				{
+					"name": "Get Feed",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzbHVnIjoibmljayIsImlhdCI6MTcyNzkxNTQ5Mn0.3klPT3pAn_B6aa3yIbwYoVpIcnuITRuR4IPC3R55Yho",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseURL}}/feed?page=0",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"feed"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "0"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Search Feed",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzbHVnIjoibmljayIsImlhdCI6MTcyNzkxNTQ5Mn0.3klPT3pAn_B6aa3yIbwYoVpIcnuITRuR4IPC3R55Yho",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseURL}}/search?q=tweet&page=0",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"search"
+							],
+							"query": [
+								{
+									"key": "q",
+									"value": "tweet"
+								},
+								{
+									"key": "page",
+									"value": "0"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Trending",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzbHVnIjoibmljayIsImlhdCI6MTcyNzkxNTQ5Mn0.3klPT3pAn_B6aa3yIbwYoVpIcnuITRuR4IPC3R55Yho",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseURL}}/trending",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"trending"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Suggestions",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzbHVnIjoibmljayIsImlhdCI6MTcyNzkxNTQ5Mn0.3klPT3pAn_B6aa3yIbwYoVpIcnuITRuR4IPC3R55Yho",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseURL}}/suggestions",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"suggestions"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add Tweet",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzbHVnIjoibmljayIsImlhdCI6MTcyNzg4NTY2Nn0.CHQ8JX_v8tDMafW51FAZgYUaPoPqzCZBEVwXOqp4ljM",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"body\": \"Enviando para consultar o feed\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseURL}}/tweet",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"tweet"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Toggle Like Tweet",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzbHVnIjoibmljayIsImlhdCI6MTcyNzg4NTY2Nn0.CHQ8JX_v8tDMafW51FAZgYUaPoPqzCZBEVwXOqp4ljM",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseURL}}/tweet/:id/like",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"tweet",
+								":id",
+								"like"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "14",
+									"type": "string"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Tweet",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzbHVnIjoibmljayIsImlhdCI6MTcyNzg4NTY2Nn0.CHQ8JX_v8tDMafW51FAZgYUaPoPqzCZBEVwXOqp4ljM",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseURL}}/tweet/:id",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"tweet",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "14",
+									"type": "string"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Answers",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzbHVnIjoibmljayIsImlhdCI6MTcyNzg4NTY2Nn0.CHQ8JX_v8tDMafW51FAZgYUaPoPqzCZBEVwXOqp4ljM",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseURL}}/tweet/:id/answers",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"tweet",
+								":id",
+								"answers"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "14",
+									"type": "string"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "User Routes",
+			"item": [
+				{
+					"name": "User by Slug",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzbHVnIjoibmljayIsImlhdCI6MTcyNzkxNTQ5Mn0.3klPT3pAn_B6aa3yIbwYoVpIcnuITRuR4IPC3R55Yho",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseURL}}/user/:slug",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"user",
+								":slug"
+							],
+							"variable": [
+								{
+									"key": "slug",
+									"value": "nick",
+									"type": "string"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "User by Slug Tweets",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzbHVnIjoibmljayIsImlhdCI6MTcyNzg4NTY2Nn0.CHQ8JX_v8tDMafW51FAZgYUaPoPqzCZBEVwXOqp4ljM",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzbHVnIjoibmljayIsImlhdCI6MTcyNzg4NTY2Nn0.CHQ8JX_v8tDMafW51FAZgYUaPoPqzCZBEVwXOqp4ljM",
+								"name": "authorization",
+								"type": "text"
+							},
+							{
+								"key": "Cache-Control",
+								"value": "no-cache",
+								"name": "cache-control",
+								"type": "text"
+							},
+							{
+								"key": "Postman-Token",
+								"value": "<calculated when request is sent>",
+								"name": "postman-token",
+								"type": "text"
+							},
+							{
+								"key": "Host",
+								"value": "<calculated when request is sent>",
+								"name": "host",
+								"type": "text"
+							},
+							{
+								"key": "User-Agent",
+								"value": "PostmanRuntime/7.39.1",
+								"name": "user-agent",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "*/*",
+								"name": "accept",
+								"type": "text"
+							},
+							{
+								"key": "Accept-Encoding",
+								"value": "gzip, deflate, br",
+								"name": "accept-encoding",
+								"type": "text"
+							},
+							{
+								"key": "Connection",
+								"value": "keep-alive",
+								"name": "connection",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{baseURL}}/user/:slug/tweets",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"user",
+								":slug",
+								"tweets"
+							],
+							"variable": [
+								{
+									"key": "slug",
+									"value": "nick",
+									"type": "string"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "User Follow",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzbHVnIjoibmljayIsImlhdCI6MTcyNzkxNTQ5Mn0.3klPT3pAn_B6aa3yIbwYoVpIcnuITRuR4IPC3R55Yho",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "{{baseURL}}/user/:slug/follow",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"user",
+								":slug",
+								"follow"
+							],
+							"variable": [
+								{
+									"key": "slug",
+									"value": "james",
+									"type": "string"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update User",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzbHVnIjoibmljayIsImlhdCI6MTcyNzg4NTY2Nn0.CHQ8JX_v8tDMafW51FAZgYUaPoPqzCZBEVwXOqp4ljM",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Nick\",\r\n    \"bio\": \"Desenvolvedor\",\r\n    \"link\": \"https://site.com\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseURL}}/user",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"user"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Avatar",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzbHVnIjoibmljayIsImlhdCI6MTcyNzg4NTY2Nn0.CHQ8JX_v8tDMafW51FAZgYUaPoPqzCZBEVwXOqp4ljM",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"slug\": \"Nick\",\r\n    \"newAvatar\": \"htts://newavatar.com\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseURL}}/user/avatar",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"user",
+								"avatar"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Cover",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzbHVnIjoibmljayIsImlhdCI6MTcyNzg4NTY2Nn0.CHQ8JX_v8tDMafW51FAZgYUaPoPqzCZBEVwXOqp4ljM",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"slug\": \"Nick\",\r\n    \"newCover\": \"image.jpg\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseURL}}/user/cover",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"user",
+								"cover"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

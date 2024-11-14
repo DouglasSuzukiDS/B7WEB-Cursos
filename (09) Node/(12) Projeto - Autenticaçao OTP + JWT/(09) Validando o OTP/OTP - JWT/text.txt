@@ -1,0 +1,23 @@
+OTP => One-time Password
+
+Magic Link => Digita o email
+OTP => Digita o email para receber o código
+
+- Rota de Login
+   - Recebe o email
+   - Gera um código, salva o código no banco de dados
+   - Envia o código para o email
+
+- Página de código
+   - Rota de validação de OTP:
+      - Valida os dados
+      - Invalida o código
+      - Cria o hash de login (JWT)
+
+- Rota de Cadastro:
+   - Nome e email
+   - Faz o processo de cadastro
+
+- Rota privada
+
+=> Node + Prisma ORM + JWT + Zod + Mailtrap

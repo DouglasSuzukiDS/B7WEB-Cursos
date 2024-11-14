@@ -1,0 +1,156 @@
+{
+	"info": {
+		"_postman_id": "ae072771-6d7f-4e78-aee7-275fba6adceb",
+		"name": "OTP",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "37130063"
+	},
+	"item": [
+		{
+			"name": "Ping",
+			"item": [
+				{
+					"name": "ping",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseURL}}/ping",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"ping"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Auth",
+			"item": [
+				{
+					"name": "signin",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\": \"nick@email.com\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseURL}}/auth/signin",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"auth",
+								"signin"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "signup",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"nick\",\r\n    \"email\": \"nick9@email.com\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseURL}}/auth/signup",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"auth",
+								"signup"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "useOTP",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": \"be12f337-e2db-4f46-9be6-89adcda2477d\",\r\n    \"code\": \"537216\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseURL}}/auth/useotp",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"auth",
+								"useotp"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Private",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNzMxNTUxNzkyfQ.WZ16qHyRheE9DJTs8edwrdmDmOAfhxW-B9NFGkBKrZ8",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNzMxNTUzODYwfQ.jQwhNGI0KrYUaWf_cRBRPelyI4DKL_rZ1lo9yqi7Bwk",
+						"type": "text"
+					},
+					{
+						"key": "",
+						"value": "",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{baseURL}}/private",
+					"host": [
+						"{{baseURL}}"
+					],
+					"path": [
+						"private"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

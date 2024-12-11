@@ -1,0 +1,20 @@
+Processo de Upload
+
+Frontend envia um arquivo para o Backend
+O backend vai receber um Buffer de dados e vai montar o arquivo.
+
+A API vai ter um endpoint para eceber o arquivo.
+   Cabeçalhos
+   -> Content-Type: multipart/form-data
+   Metodo: POST
+
+----------------------
+
+O usuario envia o arquivo
+O backend recebe o arquivo
+O backend decide o que fazer com este arquivo
+   - Ignorar
+   - Salvar na memória
+   - Salvo em uma pasta temporária
+O backend vai fazer alguma coisa com este arquivo
+O backend salva o arquivo (ou uma cópia dele) no destino final

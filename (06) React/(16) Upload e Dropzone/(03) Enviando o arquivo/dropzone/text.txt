@@ -1,0 +1,3 @@
+- No React, a maioria dos processos de upload são feitos via API
+- Geralmente os envios de arquivos são efeitos utilizando o método POST
+- No React você vai utilizar GERALMENTE o objeto FormData

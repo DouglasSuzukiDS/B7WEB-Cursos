@@ -1,0 +1,36 @@
+- docker run nameContainer => Roda o Container ou baixa ele da internet
+
+- docker ps => Mostra os Containers que estão em execução
+
+- docker ps -a => Mostra todos os Containers
+
+- docker rm containerId => Remove o Container
+
+- docker images => Mostra as images existentes
+
+- docker rmi imageId => Remove a image
+
+- docker pull nameImage (ex: nginx) => Baixa a Image
+
+- docker run nameImage => Roda o Container dessa Image
+
+- docker stop containerId => Para de rodar o Container
+
+- docker run --name containerName nameImage => Cria o container com o nome escolhido
+
+-- Exemplo de como baixar e rodar o MySQL
+
+- docker run --name meu-mysql -e MYSQL_ROOT_PASSWORD=YourPass -d mysql:version => Baixa a image do MySQL na versão desejada
+
+-- Aula 07 - Criando container com Node --
+- docker run -it --rm -v ${PWD}:/app -w /app -p 3001:3001 node:18 bash => Instala o nome e abre o terminaldo Container
+   - npm install 
+   - npm start
+   - exit => Sai do terminal do container e volta para o terminal do computador
+
+-- Aula 08 - Introducao ao Dockerfile
+- docker build -t meu-node . (Diretorio do Dockerfile) => Cria uma imagem atraves do Dockerfile
+
+- docker run -p 3001:3001 meu-node => Inicializa o Container
+
+- docker run -p 3001:3001 --name meu-servidor meu-node

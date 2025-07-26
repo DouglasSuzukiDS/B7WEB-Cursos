@@ -1,0 +1,15 @@
+services:
+  web:
+    image: servidor
+    ports:
+      - "80:5000"
+    restart: always
+    # no => Não reinicia
+    # always => Sempre que cair, reinicia
+    # unless-stopped => Reinicia quando cair, exceto se parado manualmente
+    # on-failure:NUM => Reinicia até NUM vezes, se continuar falhando, para
+    depends_on:
+      - redis # Inicia o redis antes do web
+  redis:
+    image: redis
+    restart: always

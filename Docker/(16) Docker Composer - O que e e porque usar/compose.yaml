@@ -1,0 +1,13 @@
+services:
+  app:
+    # build: .
+    image: meu-node:v2
+    ports:
+      - "3001:3001"
+  db:
+    image: mongo
+    volumes:
+      - mongo-data:/data/db
+
+volumes:
+  mongo-data:

@@ -1,0 +1,158 @@
+- docker run nameContainer => Roda o Container ou baixa ele da internet
+
+- docker ps => Mostra os Containers que estão em execução
+
+- docker ps -a => Mostra todos os Containers
+
+- docker rm containerId => Remove o Container
+
+- docker images => Mostra as images existentes
+
+- docker rmi imageId => Remove a image
+
+- docker pull nameImage (ex: nginx) => Baixa a Image
+
+- docker run nameImage => Roda o Container dessa Image
+
+- docker stop containerId => Para de rodar o Container
+
+- docker run --name containerName nameImage => Cria o container com o nome escolhido
+
+-- Exemplo de como baixar e rodar o MySQL
+
+- docker run --name meu-mysql -e MYSQL_ROOT_PASSWORD=YourPass -d mysql:version => Baixa a image do MySQL na versão desejada
+
+------------------------------------------------------------------
+
+-- Aula 07 - Criando container com Node --
+- docker run -it --rm -v ${pwd}:/app -w /app -p 3001:3001 node:18 bash => Instala o nome e abre o terminaldo Container
+   - npm install 
+   - npm start
+   - exit => Sai do terminal do container e volta para o terminal do computador
+
+------------------------------------------------------------------
+
+
+-- Aula 08 - Introducao ao Dockerfile
+- docker build -t meu-node . (Diretorio do Dockerfile) => Cria uma imagem atraves do Dockerfile
+
+- docker run -p 3001:3001 meu-node => Inicializa o Container
+
+- docker run -p 3001:3001 --name meu-servidor meu-node
+
+------------------------------------------------------------------
+
+
+-- Aula 10 - Trabalhando com Volumes - Parte 01
+- docker volume create banco => Cria o Volume
+
+- docker volume ls => Lista os Volumes existentes
+
+- docker volume rm volumeName => Remove o volume
+
+- docker run -v volumeName:diterorio -p 3001:3001 --name containerName imageName
+   - docker run -v banco:/app/data -p 3001:3001 --name meu-servidor meu-node
+
+------------------------------------------------------------------
+
+
+-- Aula 11 - Trabalhando com Volumes - Parte 02
+- docker run -v ${pwd}:/app -p 3001:3001 --name meu-servidor meu-node
+- docker build -t meu-node:v2 .
+- docker run -v $(pwd):/app -p 3001:3001 --name meu-servidor meu-node:v2
+
+------------------------------------------------------------------
+
+
+-- Aula 12 - Redes no Docker
+- docker network ls => Lista todas as redes
+
+   Exemplo 01
+      Container 01: projeto => Projeto rodando em Node - BRIDGE
+      Container 02: banco =: Banco de dados MongoDB porta 27071 - BRIDGE
+
+         Container 01 => mongodb://banco:27017
+
+   Exemplo 02
+      Container 01: frontend => Projeto rodando em React => Rede projetoXYZ
+      Container 02: frontend => Projeto rodando em Phyto,, porta 5000 => Rede projetoXYZ
+
+      http://backend:5000/api/test
+   
+
+   - docker network create rede-xyz => Cria a rede
+   - docker run -p 3001:3001 --network rede-xyz --name frontend meu-node => Roda o Container na Rede especifica
+
+------------------------------------------------------------------
+
+
+-- Aula 13 - Expondo portas e entendendo -p
+   - docker run -p 4000:3001 --name meu-server meu-node:v2  (HOST:CONTAINER)
+   - docker run -p 4000:3001 -p 4001:5001 --name meu-server meu-node:v2
+
+
+------------------------------------------------------------------
+
+-- Aula 14 - Variaveis de ambiente em containers
+   - docker run -p 3001:3001 -e AUTHOR=nick --name meu-server meu-node:v2
+   - docker run --env-file .env -p 3001:3001 meu-node:v2
+
+------------------------------------------------------------------
+
+
+-- Aula 15 - Testando variaveis na pratica
+   - docker build -t meu-node:v2 .
+   - docker run -p 3001:3001 -e AUTHOR=james --name meu-server meu-node:v2
+   - docker run -p 3001:3001 --env-file .env --name meu-server meu-node:v2
+
+------------------------------------------------------------------
+
+
+-- Aula 16 - Docker Composer - O que e e porque usar
+   - docker compose up => Sobe o container
+   - docker compose up -d => Sobe o container nem precisar em nenhum terminal do container
+   - docker compose down => Remove o container
+
+------------------------------------------------------------------
+
+
+-- Aula 17 - Python + Redis com Docker Compose
+   - docker compose up
+
+------------------------------------------------------------------
+
+
+-- Aula 18 - PHP + Apache com Docker Compose
+   - docker compose up -d
+   - docker compose down
+
+------------------------------------------------------------------
+
+-- Aula 19 - Nomeando Imagens gerada pelo Docker Compose
+
+------------------------------------------------------------------
+
+
+-- Aula 20 - 
+
+------------------------------------------------------------------
+
+
+-- Aula 21 - 
+
+------------------------------------------------------------------
+
+
+-- Aula 22 - 
+
+------------------------------------------------------------------
+
+
+-- Aula 23 - 
+
+------------------------------------------------------------------
+
+
+-- Aula 24 - 
+
+------------------------------------------------------------------

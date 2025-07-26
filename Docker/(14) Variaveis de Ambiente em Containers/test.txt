@@ -1,0 +1,42 @@
+FROM node:22
+
+# Cria uma pasta chamada app
+WORKDIR /app
+
+# Copia os arquivos package e tudo oque tiver dentro da pasta
+COPY package*.json ./
+
+# Roda o comando
+RUN npm install
+
+# Copia tudo para a pasta
+COPY . .
+
+# Expondo a porta 3001
+EXPOSE 3001
+
+# Comando para rodar a aplicação
+CMD ["npm", "run", "dev"]
+
+She steps from a pain
+just a mnona with extra touchaof crazy
+she dances in the rain
+and as tehe storm begins
+the thunder is her name
+ant when she locks my way 
+my heart begins to sway
+in the imphony her love
+she's a perfect melody 
+her music lifts me up 
+i can feel it in my soul 
+the beauty of it all
+the simphony of love
+she plays like a song
+and i'm a willin instrument
+dhe plucks my strings along
+and i feel like a king
+when i hold her close
+i can fell angle wings
+and when she holds mu hand 
+i know thai i can't stand
+in the simphony oh her love

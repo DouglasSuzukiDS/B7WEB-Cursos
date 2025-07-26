@@ -1,0 +1,6 @@
+DATABASE_URL="postgresql://USER:PASSWORD@localhost:5432/b7pizza?schema=public"
+
+NEXT_PUBLIC_BASE_URL="http://localhost:3000"
+
+STRIPE_SECRET_KEY=""
+NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY=""

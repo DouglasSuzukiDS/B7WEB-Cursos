@@ -1,0 +1,8 @@
+services:
+  web:
+    image: php-teste:v1
+    build: .
+    ports:
+      - "4000:80"
+    volumes:
+      - ./:/var/www/html/

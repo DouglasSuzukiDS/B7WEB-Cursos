@@ -1,0 +1,9 @@
+services:
+  frontend:
+    build: .
+    ports:
+      - 4000:3000
+    volumes:
+      - ./:/app # Reflete na pasta /app do container
+      - /app/node_modules # Mantem a pasta node_modules do container
+      - /app/.next

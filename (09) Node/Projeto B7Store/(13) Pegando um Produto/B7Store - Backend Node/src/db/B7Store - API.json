@@ -1,0 +1,71 @@
+{
+	"info": {
+		"_postman_id": "397d2830-ee1d-414e-bd6e-5309bdf761e3",
+		"name": "B7Store",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "37130063"
+	},
+	"item": [
+		{
+			"name": "Ping",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base}}/ping",
+					"host": [
+						"{{base}}"
+					],
+					"path": [
+						"ping"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Banners",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base}}/banners",
+					"host": [
+						"{{base}}"
+					],
+					"path": [
+						"banners"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Products",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base}}/products?limit=2&orderBy=selling",
+					"host": [
+						"{{base}}"
+					],
+					"path": [
+						"products"
+					],
+					"query": [
+						{
+							"key": "limit",
+							"value": "2"
+						},
+						{
+							"key": "orderBy",
+							"value": "selling"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

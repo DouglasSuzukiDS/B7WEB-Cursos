@@ -1,0 +1,8 @@
+PORT=4444
+BASE_URL="http://localhost:4444"
+
+FRONTEND_URL="FrontendURL"
+
+DATABASE_URL="postgresql://johndoe:randompassword@localhost:5432/b7store?schema=public"
+
+STRIPE_SECRET_KEY="StripeSecretKey TEST MODE"

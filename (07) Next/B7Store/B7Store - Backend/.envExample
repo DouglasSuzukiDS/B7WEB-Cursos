@@ -1,0 +1,16 @@
+PORT=4444
+BASE_URL="http://localhost:4444"
+
+FRONTEND_URL="FrontendURL"
+
+DATABASE_URL="postgresql://johndoe:randompassword@localhost:5432/b7store?schema=public"
+
+STRIPE_SECRET_KEY="StripeSecretKey TEST MODE"
+
+Get this key
+   - Download CLI
+   - Add in VARIBLES AMBIENT the path
+   - Insert stripe login, and make the login
+   - Run stripe listen --forward-to localhost:4444/webhook/stripe
+   - Copy the key
+STRIPE_WEBHOOK_SECRET="StripeWebhookSecret 

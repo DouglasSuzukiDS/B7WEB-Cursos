@@ -1,0 +1,3 @@
+npx drizzle-kit generate => Cria o arquivo
+npx drizzle-kit migrate => Faz a migrate do DB
+npx drizzle-kit studio => SGBD do Drizzle

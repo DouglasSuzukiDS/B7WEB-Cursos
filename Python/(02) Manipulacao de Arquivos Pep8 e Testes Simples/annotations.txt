@@ -1,0 +1,36 @@
+# Aula 10 - O que são ambientes virtuais e como criar com venv
+
+# Comando para instalar o venv:
+   # - py -m venv venv => Cria o ambiente virtual
+
+# Comando para ativar o venv:
+   # - Windows: venv\Scripts\activate
+   # - Windows Powershell: .\venv\Scripts\activate
+   # - MacOS/Linux: source venv/bin/activate
+
+# Comando para desativar o venv:
+   # - deactivate
+   
+----------------------------------
+
+# Aula 11 - Instalando e gerenciando pacotes com pip
+
+# Comandos 
+# pip list => Lista os pacotes instalados
+# pip install <nome_pacote> => Instala o pacote
+# pip install requests
+# pip uninstall <nome_pacote> => Desinstala o pacote
+
+----------------------------------
+
+# Aula 12 - Estrutura básica de um projeto Python - Parte 02
+
+# Estrutura de um projeto Python:
+
+# Criando o arquivo requirements.txt (Dependencias dos arquivos)
+# pip freeze > requirements.txt
+
+# py -m venv venv (Criando o ambiente virtual)
+# venv\Scripts\activate (Ativando o ambiente virtual no Windows)
+
+# pip install -r requirements.txt

@@ -1,0 +1,10 @@
+Entities => User
+
+Use Cases
+   - Registrar o usuário
+   - Atualizar informações do usuário
+   - Logar o usuário
+   - Autoruzar o usuário
+
+Pincipio de Use Case:
+   - Todo use case precisa ser testável independente

@@ -1,0 +1,59 @@
+import { and, gte, isNull, lte, sql } from "drizzle-orm"
+import { db } from "../db/connection"
+import { moves, products } from "../db/schema"
+import { DateRangeInput } from "../validators/dashboard.validator"
+
+export const getInventoryValue = async () => {
+   const result = await db
+      .select({
+         totalValue: sql<number>`SUM(${products.quantity} * ${products.unitPrice})`,
+      })
+      .from(products)
+      .where(isNull(products.deletedAt))
+
+   if (result[0]?.totalValue) return result[0].totalValue
+
+   return 0
+}
+
+export const getMovesSummary = async (range: DateRangeInput) => {
+   const conditions = []
+
+   if (range.startDate) {
+      const startDate = new Date(range.startDate)
+
+      conditions.push(gte(moves.createdAt, startDate))
+   }
+
+   if (range.endDate) {
+      const endDate = new Date(range.endDate)
+
+      endDate.setUTCHours(23, 59, 59, 999)
+
+      conditions.push(lte(moves.createdAt, endDate))
+   }
+
+   const result = await db
+      .select({
+         type: moves.moveType,
+         totalValue: sql<number>`SUM(${moves.quantity} * ${moves.unitPrice})`,
+         count: sql<number>`COUNT(*)`,
+      })
+      .from(moves)
+      .where(and(...conditions))
+      .groupBy(moves.moveType)
+
+   const summary = {
+      in: { value: 0, count: 0 },
+      out: { value: 0, count: 0 },
+   }
+
+   result.forEach(row => {
+      summary[row.type] = {
+         value: row.totalValue || 0,
+         count: row.count || 0
+      }
+   })
+
+   return summary
+}

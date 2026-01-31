@@ -1,0 +1,35 @@
+Aula 01 - Introdução ao Django
+
+Aula 02 - Instalando o Django e criando o primeiro projeto
+
+Aula 03 - Estrutura de pastas do Django e o arquivo manage.py
+
+Aula 04 - Criando o primeiro app e entendendo a arquitetura MTV
+
+Aula 05 - Configurações iniciais: INSTALLED_APPS, DEBUG e...
+
+Aula 06 - Criando a primeira view e URL
+
+Aula 07 - Trabalhando com templates HTML
+
+Aula 08 - Reutilização de layout com herança de templates
+
+Aula 09 - Criando modelos e tabelas no banco com ORM
+
+Aula 10 - Registrando modelos no painel administrativo
+
+Aula 11 - Criando formulários com ModelForm
+
+Aula 12 - Salvando dados no banco a partir de formulários
+
+Aula 13 - Listando objetos do banco no template
+
+Aula 14 - Criando links dinâmicos e visualização de itens individuais
+
+Aula 15 - Estilizando o projeto com CSS e arquivos estáticos
+
+Aula 16 - Criando navegação entre páginas
+
+Aula 17 - Página 404 personalizada
+
+Aula 18 - Vamos fazer um projeto?

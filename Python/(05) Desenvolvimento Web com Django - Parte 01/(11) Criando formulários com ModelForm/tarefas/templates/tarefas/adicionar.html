@@ -1,0 +1,16 @@
+{% extends 'tarefas/base.html' %}
+
+{% block title %}Adicionar Tarefa{% endblock %}
+
+{% block corpo %}
+
+<p>Tela de adicionar nova tarefa</p>
+
+<form method="post">
+   {% csrf_token %} <!-- Token de segurança para evitar ataques CSRF -->
+   {{ form.as_p }} <!-- Renderiza o formulário como p -->
+
+   <input type="submit" value="Cadastrar" />
+</form>
+
+{% endblock %}

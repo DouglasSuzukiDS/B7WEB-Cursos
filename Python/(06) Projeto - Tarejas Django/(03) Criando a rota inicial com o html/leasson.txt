@@ -1,0 +1,10 @@
+Aula 01 - Introdução ao Projeto
+Aula 02 - Configurando banco de dados
+Aula 03 - Criando a rota inicial com o html
+Aula 04 - Organizando o template
+Aula 05 - Dinamizando todos os itens da tela
+Aula 06 - Adicionando nova tarefa
+Aula 07 - Exibindo tarefa dinâmica
+Aula 08 - Calculando os dados das tarefas
+Aula 09 - Atualizando uma tarefa
+Aula 10 - Excluindo uma tarefa

@@ -29,16 +29,21 @@
 
 <ul class="task-list"> 
    {% for task in tasks %}
-   <li class="completed">
-      <form method="POST">
+   <li class="{% if task.done == True %}completed{% endif %}">
+
+      <form method="POST" action="{% url 'toggle' task.id %}">
+         {% csrf_token %}
          <input
             type="checkbox" 
-            onChange="this.form.submit()" checked />
+            onChange="this.form.submit()"
+            {% if task.done == True %}checked{% endif %} />
       </form>
 
-      <span>Assistir 30 minutos de aulas</span>
+      <span>{{ task.label }}</span>
 
-      <a href="" class="delete">×</a>
+      <a 
+         href="{% url 'delete' task.id %}" 
+         class="delete">×</a>
    </li>
    {% endfor %}
 </ul>

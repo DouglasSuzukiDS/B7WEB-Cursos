@@ -1,0 +1,13 @@
+{% extends 'tarefas/base.html' %}
+
+{% block corpo %}
+<h1>Tarefa</h1>
+
+<p>Título: {{ tarefa.titulo }}</p>
+<p>Descrição: {{ tarefa.descricao }}</p>
+<p>Concluído:
+   {% if tarefa.concluida %} Sim
+   {% else %} Não {% endif %}</p>
+<p>Criado em: {{ tarefa.criada_em|date:"d/m/Y H:i" }}</p>
+
+{% endblock %}

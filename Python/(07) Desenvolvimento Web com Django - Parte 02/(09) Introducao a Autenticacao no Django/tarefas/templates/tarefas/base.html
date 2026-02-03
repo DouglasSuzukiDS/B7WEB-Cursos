@@ -1,0 +1,36 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="pt-bri">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="{% static 'tarefas/style.css' %}">
+   <title>{% block title %}Título Padrão{% endblock %}</title>
+</head>
+
+<body>
+   <header>
+      <h1>Cabeçalho</h1>
+
+      <nav>
+         <a href="{% url 'home' %}">Home</a>
+         <a href="{% url 'adicionar' %}">Adicionar Tarefa</a>
+      </nav>
+
+      <div>
+         {% if user.is_authenticated %}
+            <p>Olá {{ user.username }}!</p>
+            <a href="{% url 'logout' %}">Sair</a>
+         {% else %}
+            <a href="{% url 'login' %}">Entrar</a>
+         {% endif %}
+      </div>
+      <hr />
+   </header>
+
+   {% block corpo %}
+   {% endblock %}
+</body>
+
+</html> 

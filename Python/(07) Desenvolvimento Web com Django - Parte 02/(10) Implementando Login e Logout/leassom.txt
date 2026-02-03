@@ -1,0 +1,14 @@
+Aula 01 - Introdução ao Curso e Revisão Rápida 
+Aula 02 - Relações 1:1, N:N e N:1 
+Aula 03 - Relação N:1 na prática 
+Aula 04 - Relação 1:1 na prática 
+Aula 05 - Relação N:N na prática 
+Aula 06 - Preenchendo itens no Admin 
+Aula 07 - Funções related para query avançada 
+Aula 08 - Prefetch para N:N 
+Aula 09 - Introdução à Autenticação no Django 
+Aula 10 - Implementando Login e Logout 
+Aula 11 - Gerenciamento de Permissões e Grupos 1 
+Aula 12 - Gerenciamento de Permissões e Grupos 2 
+Aula 13 - Gerenciamento de Permissões e Grupos 3 
+Aula 14 - Criando um Sistema de Registro de Usuários

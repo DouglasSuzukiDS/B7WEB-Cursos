@@ -1,0 +1,45 @@
+{% extends 'tarefas/base.html' %}
+
+{% block title %}Página inicial{% endblock %}
+
+{% block corpo %}
+
+<h2>Página Oficial das tarefas</h2>
+
+{% if tarefas %}
+
+<ul>
+   {% for tarefa in tarefas %}
+   <li>
+      <div>
+         <a href="{% url 'tarefa' tarefa.id %}">
+            {{ tarefa.titulo }}</a> -
+
+         <strong>
+            {% if tarefa.concluida %}
+            ( Concluída )
+            {% else %}
+            ( Não concluida )
+            {% endif %}
+         </strong>
+      </div>
+
+      <div>
+         Autor: {{ tarefa.usuario.username }}
+      </div>
+
+      <div>
+         Bio: {{ tarefa.usuario.perfil.bio }}
+      </div>
+      <hr />
+   </li>
+   {% endfor %}
+</ul>
+
+{% else %}
+
+<p>Nenhuma tarefa cadastradas.</p>
+
+{% endif %}
+
+{% endblock %}

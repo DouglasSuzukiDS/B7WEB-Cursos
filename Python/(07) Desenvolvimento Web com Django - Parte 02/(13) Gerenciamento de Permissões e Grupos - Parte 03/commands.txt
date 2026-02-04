@@ -1,0 +1,26 @@
+# COmando usando durante o MODULO 05 Desenvolvimento Web com Django - Parte 01
+# py -m venv venv => Cria um ambiente virtual
+# venv\Scripts\activate => Ativa o ambiente virtual
+# pip install django => Instala o Django
+# pip freeze > requirements.txt => Cria arquivos com as dependencias
+# pip install requirements.txt
+
+# django-admin --version => Verifica a versão do Django
+# django-admin startproject core . => Cria um projeto Django
+# py manage.py runserver => Roda o servidor 
+
+// Aula 09
+# py manage.py makemigrations => Cria as migrations
+# py manage.py migrate => Roda migrations
+
+// Aula 10
+# py manage.py createsuperuser
+   # nick - 1234 (user)
+
+// (07) Desenvolvimento Web com Django - Parte 02
+
+# pip install -r requirements.txt
+
+// Aula 03
+# py manage.py makemigrations => Cria as migrations
+# py manage.py migrate => Roda migrations

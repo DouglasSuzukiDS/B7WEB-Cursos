@@ -1,0 +1,21 @@
+Aula 01 - Introdução a integração com LLMs
+Aula 02 - Estrutura Geral das APIs de LLMs
+Aula 03 - Configurando o ambiente em Python
+Aula 04 - Configurando o ambiente em Node
+Aula 05 - Python - Primeiros passos com a API da OpenAI
+Aula 06 - Python - Primeiros passos com a API da Anthropic (Claude)
+Aula 07 - Python - Primeiros passos com a API da xAI (Grok)
+Aula 08 - Python - Primeiros passos com a API do Google (Gemini)
+Aula 09 - Python - Trabalhando com APIs open-source locais (Ollama)
+Aula 10 - Python - Bibliotecas unificadas para múltiplos provedores (Groq)
+Aula 11 - Python - Output estruturado com OpenAI
+Aula 12 - Python - Analisando uma imagem com OpenAI
+Aula 13 - Node - Primeiros passos com a API da OpenAI
+Aula 14 - Node - Primeiros passos com a API da Anthropic (Claude)
+Aula 15 - Node - Primeiros passos com a API da xAI (Grok)
+Aula 16 - Node - Primeiros passos com a API do Google (Gemini)
+Aula 17 - Node - Trabalhando com APIs open-source locais (Ollama)
+Aula 18 - Node - Bibliotecas unificadas para múltiplos provedores (Groq)
+Aula 19 - Node - Output estruturado com OpenAI
+Aula 20 - Node - Analisando uma imagem com OpenAI
+Aula 21 - Próximos passos

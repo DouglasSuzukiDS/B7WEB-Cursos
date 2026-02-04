@@ -1,0 +1,5 @@
+# Comandos usardos no Mododulo Integração com APIs de LLMs
+# py -m venv venv => Cria um ambiente virtual
+# venv\Scripts\activate => Ativa o ambiente virtual
+# pip freeze > requirements.txt => Cria arquivos com as dependencias
+# pip install -r requirements.txt

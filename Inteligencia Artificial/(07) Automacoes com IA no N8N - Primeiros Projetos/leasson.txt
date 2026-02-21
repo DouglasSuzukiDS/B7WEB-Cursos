@@ -1,0 +1,19 @@
+Aula01 - Introdução ao n8n e automações com IA
+Aula02 - Instalando e configurando o n8n
+Aula03 - Tornando o Container Docker permanente
+Aula04 - Fundamentos do n8n: nodes, triggers e execuções 1
+Aula05 - Fundamentos do n8n: nodes, triggers e execuções 2
+Aula06 - Trabalhando com dados: Set, Code e transformações
+Aula07 - Mini-projeto 1 - Workflow com webhook e resposta JSON
+Aula08 - Configurando credenciais e conectando Google Sheets
+Aula09 - Lendo e escrevendo dados no Google Sheets
+Aula10 - Mini-projeto 2 - Sistema de registro automático em planilha
+Aula11 - Configurando o Telegram Bot
+Aula12 - Recebendo e respondendo mensagens no Telegram
+Aula13 - Mini-projeto 3 - Bot de anotações no Telegram + Google Sheets 1
+Aula14 - Mini-projeto 3 - Bot de anotações no Telegram + Google Sheets 2
+Aula15 - Primeira integração com OpenAI
+Aula16 - Criando prompts dinâmicos com dados do workflow
+Aula17 - Mini-projeto 4 - Bot no Telegram com respostas da IA 1
+Aula18 - Mini-projeto 4 - Bot no Telegram com respostas da IA 2
+Aula19 - Próximos passos

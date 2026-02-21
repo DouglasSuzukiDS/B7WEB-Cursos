@@ -1,0 +1,12 @@
+Aula 01 - Visão geral do MCP
+Aula 02 - Componentes do ecossistema
+Aula 03 - Usando MCP no Cursor
+Aula 04 - Usando MCP no VS Code (Agent Mode)
+Aula 05 - Usando MCP Toolkit do Docker
+Aula 06 - Modelo de mensagens do protocolo
+Aula 07 - Limites, contexto e memória do agente (MCP Client)
+Aula 08 - Segurança no MCP
+Aula 09 - Construindo um servidor MCP do zero (Node) - Parte 01
+Aula 10 - Construindo um servidor MCP do zero (Node) - Parte 02
+Aula 11 - Rodando um servidor MCP via servidor Node
+Aula 12 - Vamos fazer um servidor MCP para um projeto?

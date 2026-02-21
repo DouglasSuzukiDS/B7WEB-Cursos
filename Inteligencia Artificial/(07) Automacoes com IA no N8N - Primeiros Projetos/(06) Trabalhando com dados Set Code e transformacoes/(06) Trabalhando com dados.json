@@ -1,0 +1,123 @@
+{
+  "name": "My workflow",
+  "nodes": [
+    {
+      "parameters": {},
+      "type": "n8n-nodes-base.manualTrigger",
+      "typeVersion": 1,
+      "position": [
+        -384,
+        -96
+      ],
+      "id": "b3f57b2f-4f20-47cb-9916-2204661a019e",
+      "name": "Start"
+    },
+    {
+      "parameters": {
+        "assignments": {
+          "assignments": [
+            {
+              "id": "55f524b7-5a66-4b06-bea7-9d8262a76530",
+              "name": "name",
+              "value": "={{ $json.name }}",
+              "type": "string"
+            },
+            {
+              "id": "961117b7-4dde-4bfb-9000-969f9eea2c00",
+              "name": "lastName",
+              "value": "={{ $json.lastName }}",
+              "type": "string"
+            },
+            {
+              "id": "023375ed-69c2-49f5-8886-0d2fda100c5b",
+              "name": "age",
+              "value": "={{ $json.age }}",
+              "type": "number"
+            },
+            {
+              "id": "57a704d7-dd61-4c54-b7ba-ddf3f0de9c97",
+              "name": "fullName",
+              "value": "={{`${$json.name} ${$json.lastName}`}}",
+              "type": "string"
+            },
+            {
+              "id": "b31b8960-309c-48d6-98c8-97511bc0aa6d",
+              "name": "adult",
+              "value": "={{ $json.age >= 18 }}",
+              "type": "boolean"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [
+        -192,
+        -96
+      ],
+      "id": "f9a9ecc7-2d4a-47d0-8458-d1dfe3e08a0e",
+      "name": "Pupular Info"
+    },
+    {
+      "parameters": {
+        "jsCode": "let userData = $('Pupular Info').all()\nreturn userData"
+      },
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        0,
+        -96
+      ],
+      "id": "4139452b-b858-4a85-b31b-87aac1d93ba5",
+      "name": "Code in JavaScript"
+    }
+  ],
+  "pinData": {
+    "Start": [
+      {
+        "json": {
+          "name": "Nick",
+          "lastName": "Legasov",
+          "age": 20
+        }
+      }
+    ]
+  },
+  "connections": {
+    "Start": {
+      "main": [
+        [
+          {
+            "node": "Pupular Info",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Pupular Info": {
+      "main": [
+        [
+          {
+            "node": "Code in JavaScript",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": false,
+  "settings": {
+    "executionOrder": "v1",
+    "binaryMode": "separate",
+    "availableInMCP": false
+  },
+  "versionId": "4eab5f0f-80bf-43c7-9dfe-ef13396c9f3e",
+  "meta": {
+    "instanceId": "f240efc0a8e912e49a3126ec08372ee8f4077029d2e3e10beaf922da28c7ee3b"
+  },
+  "id": "qYqAHzxZAngzbQoz",
+  "tags": []
+}

@@ -12,7 +12,7 @@ Aula 11 - Python - Output estruturado com OpenAI
 Aula 12 - Python - Analisando uma imagem com OpenAI
 Aula 13 - Node - Primeiros passos com a API da OpenAI
 Aula 14 - Node - Primeiros passos com a API da Anthropic (Claude)
-Aula 15 - Node - Primeiros passos com a API da xAI (Grok)
+Aula 15 - Node - Primeiros passos com a API da XAI (Grok)
 Aula 16 - Node - Primeiros passos com a API do Google (Gemini)
 Aula 17 - Node - Trabalhando com APIs open-source locais (Ollama)
 Aula 18 - Node - Bibliotecas unificadas para múltiplos provedores (Groq)

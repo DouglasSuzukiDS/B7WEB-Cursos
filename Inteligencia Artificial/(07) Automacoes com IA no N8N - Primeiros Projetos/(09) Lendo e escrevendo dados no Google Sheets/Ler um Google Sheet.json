@@ -1,0 +1,74 @@
+{
+  "name": "Ler um Google Sheet",
+  "nodes": [
+    {
+      "parameters": {},
+      "type": "n8n-nodes-base.manualTrigger",
+      "typeVersion": 1,
+      "position": [
+        -336,
+        -16
+      ],
+      "id": "9b0b2b5b-82ca-4355-834f-2197543e68d0",
+      "name": "When clicking ‘Execute workflow’"
+    },
+    {
+      "parameters": {
+        "documentId": {
+          "__rl": true,
+          "value": "1Va5tpjdq0TDHJprkiKHPLV58mnnMBHFWmESvsFPl-l0",
+          "mode": "id"
+        },
+        "sheetName": {
+          "__rl": true,
+          "value": "gid=0",
+          "mode": "list",
+          "cachedResultName": "Sheet1",
+          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/1Va5tpjdq0TDHJprkiKHPLV58mnnMBHFWmESvsFPl-l0/edit#gid=0"
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.googleSheets",
+      "typeVersion": 4.7,
+      "position": [
+        -128,
+        -16
+      ],
+      "id": "8876201a-c916-42f0-bfcf-135edde2fd10",
+      "name": "Get row(s) in sheet",
+      "credentials": {
+        "googleSheetsOAuth2Api": {
+          "id": "R7mm0ek1jrjCwQPB",
+          "name": "Google Sheets account"
+        }
+      }
+    }
+  ],
+  "pinData": {},
+  "connections": {
+    "When clicking ‘Execute workflow’": {
+      "main": [
+        [
+          {
+            "node": "Get row(s) in sheet",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": false,
+  "settings": {
+    "executionOrder": "v1",
+    "binaryMode": "separate",
+    "availableInMCP": false
+  },
+  "versionId": "5c02d0c7-e556-42da-8139-f4e115865d5f",
+  "meta": {
+    "templateCredsSetupCompleted": true,
+    "instanceId": "f240efc0a8e912e49a3126ec08372ee8f4077029d2e3e10beaf922da28c7ee3b"
+  },
+  "id": "1bphcmdDnRgBObMH",
+  "tags": []
+}

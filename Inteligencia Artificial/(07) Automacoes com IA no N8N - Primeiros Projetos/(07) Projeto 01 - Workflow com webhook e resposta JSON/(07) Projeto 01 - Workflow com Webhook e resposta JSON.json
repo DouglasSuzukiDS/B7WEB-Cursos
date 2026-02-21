@@ -1,0 +1,85 @@
+{
+  "name": "Test Webhook",
+  "nodes": [
+    {
+      "parameters": {
+        "httpMethod": "POST",
+        "path": "teste",
+        "responseMode": "responseNode",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 2.1,
+      "position": [
+        0,
+        0
+      ],
+      "id": "4cc78de0-aba2-4b67-ace6-81ed62a3ddfe",
+      "name": "Webhook",
+      "webhookId": "ad9dcf59-46c5-4649-9d78-b7459118c2a9"
+    },
+    {
+      "parameters": {
+        "jsCode": "const bodyData = $input.first().json.body\n\nif(!bodyData.name || !bodyData.email) {\n  return { error: 'Dados inválidos.' }\n}\n\nif(!bodyData.email.includes('@')) {\n  return { error: 'Email inválido.' }\n}\n\nreturn {\n  error: null,\n  message: 'Dados cadastrados com sucesso.',\n  data: {\n    id: 123,\n    name: bodyData.name,\n    email: bodyData.email\n  }\n}"
+      },
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        208,
+        0
+      ],
+      "id": "ebc4814a-649e-45e9-ac7c-9d98e2c4942e",
+      "name": "Code in JavaScript"
+    },
+    {
+      "parameters": {
+        "options": {}
+      },
+      "type": "n8n-nodes-base.respondToWebhook",
+      "typeVersion": 1.5,
+      "position": [
+        416,
+        0
+      ],
+      "id": "7a153d00-e150-4fed-9433-a5463b468b90",
+      "name": "Respond to Webhook"
+    }
+  ],
+  "pinData": {},
+  "connections": {
+    "Webhook": {
+      "main": [
+        [
+          {
+            "node": "Code in JavaScript",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Code in JavaScript": {
+      "main": [
+        [
+          {
+            "node": "Respond to Webhook",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": false,
+  "settings": {
+    "executionOrder": "v1",
+    "binaryMode": "separate",
+    "availableInMCP": false
+  },
+  "versionId": "ead29f29-fc55-424b-9ebc-5bfb7564ff70",
+  "meta": {
+    "instanceId": "f240efc0a8e912e49a3126ec08372ee8f4077029d2e3e10beaf922da28c7ee3b"
+  },
+  "id": "n494crwZDEx4ujLS",
+  "tags": []
+}

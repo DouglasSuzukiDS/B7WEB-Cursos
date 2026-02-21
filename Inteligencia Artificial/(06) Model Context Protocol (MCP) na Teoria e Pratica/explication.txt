@@ -1,0 +1,8 @@
+MCP = Model Context protocolo
+
+MCP Client => A ferramenta que usa esse MCP Server
+MCP Server => è o sistema que você faz para IA usar
+
+=> Tools
+=> Prompts
+=> Resources
